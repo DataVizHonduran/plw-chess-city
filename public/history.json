@@ -1,0 +1,1262 @@
+[
+  {
+    "date": "2026-04-01",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 17,
+        "cumulative_plw": 17
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 10,
+        "cumulative_plw": 10
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 18,
+        "cumulative_plw": 18
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 11,
+        "cumulative_plw": 11
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 12,
+        "cumulative_plw": 12
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 15,
+        "cumulative_plw": 15
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 19,
+        "cumulative_plw": 19
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 13,
+        "cumulative_plw": 13
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 17,
+        "cumulative_plw": 17
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 15,
+        "cumulative_plw": 15
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 20,
+        "cumulative_plw": 20
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 18,
+        "cumulative_plw": 18
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 15,
+        "cumulative_plw": 15
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 15,
+        "cumulative_plw": 15
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 18,
+        "cumulative_plw": 18
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 13,
+        "cumulative_plw": 13
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 17,
+        "cumulative_plw": 17
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 15,
+        "cumulative_plw": 15
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 19,
+        "cumulative_plw": 19
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 15,
+        "cumulative_plw": 15
+      }
+    ]
+  },
+  {
+    "date": "2026-04-02",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 34,
+        "cumulative_plw": 34
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 23,
+        "cumulative_plw": 23
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 30,
+        "cumulative_plw": 30
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 23,
+        "cumulative_plw": 23
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 32,
+        "cumulative_plw": 32
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 34,
+        "cumulative_plw": 34
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 35,
+        "cumulative_plw": 35
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 25,
+        "cumulative_plw": 25
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 27,
+        "cumulative_plw": 27
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 34,
+        "cumulative_plw": 34
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 32,
+        "cumulative_plw": 32
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 33,
+        "cumulative_plw": 33
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 26,
+        "cumulative_plw": 26
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 35,
+        "cumulative_plw": 35
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 38,
+        "cumulative_plw": 38
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 27,
+        "cumulative_plw": 27
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 33,
+        "cumulative_plw": 33
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 35,
+        "cumulative_plw": 35
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 35,
+        "cumulative_plw": 35
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 32,
+        "cumulative_plw": 32
+      }
+    ]
+  },
+  {
+    "date": "2026-04-03",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 46,
+        "cumulative_plw": 46
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 43,
+        "cumulative_plw": 43
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 42,
+        "cumulative_plw": 42
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 41,
+        "cumulative_plw": 41
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 45,
+        "cumulative_plw": 45
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 48,
+        "cumulative_plw": 48
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 45,
+        "cumulative_plw": 45
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 45,
+        "cumulative_plw": 45
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 39,
+        "cumulative_plw": 39
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 50,
+        "cumulative_plw": 50
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 42,
+        "cumulative_plw": 42
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 51,
+        "cumulative_plw": 51
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 37,
+        "cumulative_plw": 37
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 52,
+        "cumulative_plw": 52
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 52,
+        "cumulative_plw": 52
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 42,
+        "cumulative_plw": 42
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 48,
+        "cumulative_plw": 48
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 51,
+        "cumulative_plw": 51
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 45,
+        "cumulative_plw": 45
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 43,
+        "cumulative_plw": 43
+      }
+    ]
+  },
+  {
+    "date": "2026-04-04",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 56,
+        "cumulative_plw": 56
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 59,
+        "cumulative_plw": 59
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 57,
+        "cumulative_plw": 57
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 56,
+        "cumulative_plw": 56
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 58,
+        "cumulative_plw": 58
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 67,
+        "cumulative_plw": 67
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 65,
+        "cumulative_plw": 65
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 56,
+        "cumulative_plw": 56
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 55,
+        "cumulative_plw": 55
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 66,
+        "cumulative_plw": 66
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 61,
+        "cumulative_plw": 61
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 61,
+        "cumulative_plw": 61
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 54,
+        "cumulative_plw": 54
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 67,
+        "cumulative_plw": 67
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 71,
+        "cumulative_plw": 71
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 59,
+        "cumulative_plw": 59
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 62,
+        "cumulative_plw": 62
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 69,
+        "cumulative_plw": 69
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 60,
+        "cumulative_plw": 60
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 55,
+        "cumulative_plw": 55
+      }
+    ]
+  },
+  {
+    "date": "2026-04-05",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 71,
+        "cumulative_plw": 71
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 74,
+        "cumulative_plw": 74
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 74,
+        "cumulative_plw": 74
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 74,
+        "cumulative_plw": 74
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 69,
+        "cumulative_plw": 69
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 87,
+        "cumulative_plw": 87
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 81,
+        "cumulative_plw": 81
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 70,
+        "cumulative_plw": 70
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 67,
+        "cumulative_plw": 67
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 81,
+        "cumulative_plw": 81
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 80,
+        "cumulative_plw": 80
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 73,
+        "cumulative_plw": 73
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 74,
+        "cumulative_plw": 74
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 81,
+        "cumulative_plw": 81
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 81,
+        "cumulative_plw": 81
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 70,
+        "cumulative_plw": 70
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 73,
+        "cumulative_plw": 73
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 82,
+        "cumulative_plw": 82
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 72,
+        "cumulative_plw": 72
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 70,
+        "cumulative_plw": 70
+      }
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 89,
+        "cumulative_plw": 89
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 84,
+        "cumulative_plw": 84
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 89,
+        "cumulative_plw": 89
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 84,
+        "cumulative_plw": 84
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 81,
+        "cumulative_plw": 81
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 97,
+        "cumulative_plw": 97
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 92,
+        "cumulative_plw": 92
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 80,
+        "cumulative_plw": 80
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 82,
+        "cumulative_plw": 82
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 94,
+        "cumulative_plw": 94
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 99,
+        "cumulative_plw": 99
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 87,
+        "cumulative_plw": 87
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 88,
+        "cumulative_plw": 88
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 98,
+        "cumulative_plw": 98
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 91,
+        "cumulative_plw": 91
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 82,
+        "cumulative_plw": 82
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 93,
+        "cumulative_plw": 93
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 100,
+        "cumulative_plw": 100
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 91,
+        "cumulative_plw": 91
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 85,
+        "cumulative_plw": 85
+      }
+    ]
+  },
+  {
+    "date": "2026-04-07",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 104,
+        "cumulative_plw": 104
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 101,
+        "cumulative_plw": 101
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 103,
+        "cumulative_plw": 103
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 94,
+        "cumulative_plw": 94
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 92,
+        "cumulative_plw": 92
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 117,
+        "cumulative_plw": 117
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 105,
+        "cumulative_plw": 105
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 90,
+        "cumulative_plw": 90
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 95,
+        "cumulative_plw": 95
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 105,
+        "cumulative_plw": 105
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 110,
+        "cumulative_plw": 110
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 106,
+        "cumulative_plw": 106
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 105,
+        "cumulative_plw": 105
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 109,
+        "cumulative_plw": 109
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 106,
+        "cumulative_plw": 106
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 93,
+        "cumulative_plw": 93
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 110,
+        "cumulative_plw": 110
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 111,
+        "cumulative_plw": 111
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 108,
+        "cumulative_plw": 108
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 103,
+        "cumulative_plw": 103
+      }
+    ]
+  },
+  {
+    "date": "2026-04-08",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 118,
+        "cumulative_plw": 118
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 111,
+        "cumulative_plw": 111
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 122,
+        "cumulative_plw": 122
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 106,
+        "cumulative_plw": 106
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 102,
+        "cumulative_plw": 102
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 134,
+        "cumulative_plw": 134
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 116,
+        "cumulative_plw": 116
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 101,
+        "cumulative_plw": 101
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 105,
+        "cumulative_plw": 105
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 123,
+        "cumulative_plw": 123
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 121,
+        "cumulative_plw": 121
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 124,
+        "cumulative_plw": 124
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 117,
+        "cumulative_plw": 117
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 123,
+        "cumulative_plw": 123
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 116,
+        "cumulative_plw": 116
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 107,
+        "cumulative_plw": 107
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 125,
+        "cumulative_plw": 125
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 129,
+        "cumulative_plw": 129
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 128,
+        "cumulative_plw": 128
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 120,
+        "cumulative_plw": 120
+      }
+    ]
+  },
+  {
+    "date": "2026-04-09",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 135,
+        "cumulative_plw": 135
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 130,
+        "cumulative_plw": 130
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 132,
+        "cumulative_plw": 132
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 121,
+        "cumulative_plw": 121
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 118,
+        "cumulative_plw": 118
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 153,
+        "cumulative_plw": 153
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 130,
+        "cumulative_plw": 130
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 120,
+        "cumulative_plw": 120
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 117,
+        "cumulative_plw": 117
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 142,
+        "cumulative_plw": 142
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 131,
+        "cumulative_plw": 131
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 134,
+        "cumulative_plw": 134
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 127,
+        "cumulative_plw": 127
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 140,
+        "cumulative_plw": 140
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 135,
+        "cumulative_plw": 135
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 117,
+        "cumulative_plw": 117
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 141,
+        "cumulative_plw": 141
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 148,
+        "cumulative_plw": 148
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 139,
+        "cumulative_plw": 139
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 136,
+        "cumulative_plw": 136
+      }
+    ]
+  },
+  {
+    "date": "2026-04-10",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 152,
+        "cumulative_plw": 152
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 146,
+        "cumulative_plw": 146
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 143,
+        "cumulative_plw": 143
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 138,
+        "cumulative_plw": 138
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 129,
+        "cumulative_plw": 129
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 170,
+        "cumulative_plw": 170
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 140,
+        "cumulative_plw": 140
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 139,
+        "cumulative_plw": 139
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 130,
+        "cumulative_plw": 130
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 153,
+        "cumulative_plw": 153
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 149,
+        "cumulative_plw": 149
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 145,
+        "cumulative_plw": 145
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 143,
+        "cumulative_plw": 143
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 156,
+        "cumulative_plw": 156
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 148,
+        "cumulative_plw": 148
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 134,
+        "cumulative_plw": 134
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 158,
+        "cumulative_plw": 158
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 167,
+        "cumulative_plw": 167
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 154,
+        "cumulative_plw": 154
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 147,
+        "cumulative_plw": 147
+      }
+    ]
+  },
+  {
+    "date": "2026-04-11",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 165,
+        "cumulative_plw": 165
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 162,
+        "cumulative_plw": 162
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 156,
+        "cumulative_plw": 156
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 153,
+        "cumulative_plw": 153
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 140,
+        "cumulative_plw": 140
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 187,
+        "cumulative_plw": 187
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 152,
+        "cumulative_plw": 152
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 158,
+        "cumulative_plw": 158
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 147,
+        "cumulative_plw": 147
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 165,
+        "cumulative_plw": 165
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 162,
+        "cumulative_plw": 162
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 164,
+        "cumulative_plw": 164
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 159,
+        "cumulative_plw": 159
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 166,
+        "cumulative_plw": 166
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 158,
+        "cumulative_plw": 158
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 152,
+        "cumulative_plw": 152
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 172,
+        "cumulative_plw": 172
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 183,
+        "cumulative_plw": 183
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 166,
+        "cumulative_plw": 166
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 160,
+        "cumulative_plw": 160
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12",
+    "players": [
+      {
+        "player_id": "Alejandro",
+        "mtd_plw": 175,
+        "cumulative_plw": 175
+      },
+      {
+        "player_id": "Brianna",
+        "mtd_plw": 180,
+        "cumulative_plw": 180
+      },
+      {
+        "player_id": "Carlos",
+        "mtd_plw": 170,
+        "cumulative_plw": 170
+      },
+      {
+        "player_id": "Destiny",
+        "mtd_plw": 172,
+        "cumulative_plw": 172
+      },
+      {
+        "player_id": "Emmanuel",
+        "mtd_plw": 154,
+        "cumulative_plw": 154
+      },
+      {
+        "player_id": "Fatima",
+        "mtd_plw": 202,
+        "cumulative_plw": 202
+      },
+      {
+        "player_id": "Gabriel",
+        "mtd_plw": 171,
+        "cumulative_plw": 171
+      },
+      {
+        "player_id": "Hannah",
+        "mtd_plw": 178,
+        "cumulative_plw": 178
+      },
+      {
+        "player_id": "Isaiah",
+        "mtd_plw": 159,
+        "cumulative_plw": 159
+      },
+      {
+        "player_id": "Jasmine",
+        "mtd_plw": 177,
+        "cumulative_plw": 177
+      },
+      {
+        "player_id": "Kevin",
+        "mtd_plw": 182,
+        "cumulative_plw": 182
+      },
+      {
+        "player_id": "Leilani",
+        "mtd_plw": 180,
+        "cumulative_plw": 180
+      },
+      {
+        "player_id": "Marcus",
+        "mtd_plw": 172,
+        "cumulative_plw": 172
+      },
+      {
+        "player_id": "Naomi",
+        "mtd_plw": 183,
+        "cumulative_plw": 183
+      },
+      {
+        "player_id": "Orlando",
+        "mtd_plw": 172,
+        "cumulative_plw": 172
+      },
+      {
+        "player_id": "Priya",
+        "mtd_plw": 170,
+        "cumulative_plw": 170
+      },
+      {
+        "player_id": "Quincy",
+        "mtd_plw": 183,
+        "cumulative_plw": 183
+      },
+      {
+        "player_id": "Raquel",
+        "mtd_plw": 196,
+        "cumulative_plw": 196
+      },
+      {
+        "player_id": "Samuel",
+        "mtd_plw": 181,
+        "cumulative_plw": 181
+      },
+      {
+        "player_id": "Tanya",
+        "mtd_plw": 176,
+        "cumulative_plw": 176
+      }
+    ]
+  }
+]

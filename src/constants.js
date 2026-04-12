@@ -1,0 +1,10 @@
+export const TILE_W = 32;
+export const TILE_H = 16;
+export const GRID_SIZE = 50;   // 5×5 layout → 10×10 zone per player for 25 players
+export const CANVAS_W = 1800;
+export const CANVAS_H = 900;
+export const CANVAS_OFFSET_X = 900;
+export const CANVAS_OFFSET_Y = 60;
+export const POLL_INTERVAL = 30000;
+export const SKYSCRAPER_RISE_FRAMES = 60;
+export const PARTICLE_LIFETIME = 30;

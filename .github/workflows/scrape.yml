@@ -1,0 +1,35 @@
+name: Scrape PLW Daily
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 6am UTC daily
+  workflow_dispatch:       # also triggerable manually from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run scraper
+        run: python scripts/scrape_plw.py
+
+      - name: Commit updated data
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add public/team_stats.json public/base_plw.json
+          git diff --staged --quiet || git commit -m "chore: update PLW data [skip ci]"
+          git push
