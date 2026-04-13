@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
-const STEP_MS = 3000; // ms per day frame during auto-play
+const STEP_MS = 1500; // ms per day frame during auto-play
 
 // Deterministic seeded random [0,1) from a string key
 function seededRand(str) {
