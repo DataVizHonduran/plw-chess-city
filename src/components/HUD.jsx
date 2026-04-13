@@ -3,6 +3,12 @@ import { getTier, getTeamLandmark } from '../engine/tierConfig.js';
 const TIER_LABEL = { 1: 'Outskirts', 2: 'Village', 3: 'Town', 4: 'City' };
 const TIER_COLOR = { 1: '#a07850', 2: '#60a060', 3: '#4080c0', 4: '#c060c0' };
 
+function fmtName(fullName) {
+  const parts = fullName.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0];
+  return parts[0] + ' ' + parts[parts.length - 1][0] + '.';
+}
+
 function fmtDate(dateStr) {
   if (!dateStr) return '';
   const [, m, d] = dateStr.split('-');
@@ -57,7 +63,7 @@ export default function HUD({ players, loading, error, assetsReady, currentDate,
             return (
               <div key={p.player_id} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <span style={{ color, minWidth: 14 }}>{is1k ? '★' : '·'}</span>
-                <span style={{ minWidth: 110 }}>{p.player_id}</span>
+                <span style={{ minWidth: 110 }}>{fmtName(p.player_id)}</span>
                 <span style={{ minWidth: 70 }}>
                   {cum.toLocaleString()}
                   <span style={{ fontSize: 10, color: '#666', marginLeft: 4 }}>
