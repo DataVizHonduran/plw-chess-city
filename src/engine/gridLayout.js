@@ -26,9 +26,8 @@ function pick(arr, seed) {
 export function assignZones(players) {
   const sorted = [...players].sort((a, b) => a.player_id.localeCompare(b.player_id));
   const n = sorted.length;
-  const gridN = Math.max(30, n);   // grid never shrinks below 30 slots
-  const cols = Math.ceil(Math.sqrt(gridN));
-  const rows = Math.ceil(gridN / cols);
+  const cols = Math.ceil(Math.sqrt(n));
+  const rows = Math.ceil(n / cols);
   const zoneW = Math.floor(GRID_SIZE / cols);
   const zoneH = Math.floor(GRID_SIZE / rows);
 
@@ -45,6 +44,7 @@ export function assignZones(players) {
 }
 
 export function buildZoneTiles(playerId, cumPlw, zone) {
+  if (cumPlw <= 0) return [];   // empty zone — stays dark canvas
   const roadTier   = getRoadTier(cumPlw);
   const density     = getDensity(cumPlw);
   const buildingPool = unlockedPool(BUILDING_MILESTONES, cumPlw);

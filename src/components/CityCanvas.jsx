@@ -42,22 +42,20 @@ export default function CityCanvas() {
     });
   }, []);
 
-  // Live data — only players who have scored
-  const { players: rawLivePlayers, loading, error } = useTeamStats();
-  const livePlayers = rawLivePlayers.filter(p => (p.cumulative_plw ?? 0) > 0);
+  // Live data — all players for stable grid, filter only for HUD display
+  const { players: livePlayers, loading, error } = useTeamStats();
   const liveCityState = useCityState(livePlayers, animRef);
 
   // Playback
   const { snapshots, currentIndex, currentPlayers, currentDate, isPlaying, isAtLatest, scrubTo, replay } = usePlayback();
 
-  // Compute city state for the current playback frame (PLW > 0 only)
-  const activePlayers = currentPlayers.filter(p => (p.cumulative_plw ?? 0) > 0);
+  // City state uses ALL players for stable grid layout.
+  // buildZoneTiles skips tiles for PLW=0 players (dark canvas = empty zone).
   const prevPlaybackPlwRef = useRef({});
   useEffect(() => {
-    if (!activePlayers.length) return;
-
+    if (!currentPlayers.length) return;
     const prevPlw = prevPlaybackPlwRef.current;
-    activePlayers.forEach(p => {
+    currentPlayers.forEach(p => {
       const prev = prevPlw[p.player_id] ?? 0;
       const curr = p.cumulative_plw ?? 0;
       if (curr > prev && animRef.current) {
@@ -68,14 +66,14 @@ export default function CityCanvas() {
       }
     });
     prevPlaybackPlwRef.current = Object.fromEntries(
-      activePlayers.map(p => [p.player_id, p.cumulative_plw ?? 0])
+      currentPlayers.map(p => [p.player_id, p.cumulative_plw ?? 0])
     );
   }, [currentPlayers]);
 
   useEffect(() => {
-    if (!activePlayers.length) return;
-    const state = buildCityState(activePlayers);
-    activePlayers.forEach(p => {
+    if (!currentPlayers.length) return;
+    const state = buildCityState(currentPlayers);
+    currentPlayers.forEach(p => {
       const cum = p.cumulative_plw ?? 0;
       if (cum >= 500 && animRef.current.skyscraperProgress[p.player_id] === undefined) {
         animRef.current.skyscraperProgress[p.player_id] = 1;
@@ -83,6 +81,8 @@ export default function CityCanvas() {
     });
     cityStateRef.current = state;
   }, [currentPlayers]);
+
+  const activePlayers = currentPlayers.filter(p => (p.cumulative_plw ?? 0) > 0);
 
   // After playback ends, switch to live state
   useEffect(() => {
@@ -93,8 +93,8 @@ export default function CityCanvas() {
 
   useAnimationLoop(canvasRef, imagesRef, cityStateRef, animRef);
 
-  // Displayed players: during playback show historical, after show live — PLW > 0 only
-  const displayPlayers = (!isAtLatest || isPlaying) ? activePlayers : livePlayers;
+  // HUD shows PLW > 0 only; city uses full roster for stable grid
+  const hudPlayers = (!isAtLatest || isPlaying) ? activePlayers : livePlayers.filter(p => (p.cumulative_plw ?? 0) > 0);
 
   return (
     <div style={{ background: '#1a1a2e', width: CANVAS_W, margin: '0 auto' }}>
@@ -106,7 +106,7 @@ export default function CityCanvas() {
           style={{ display: 'block' }}
         />
         <HUD
-          players={displayPlayers}
+          players={hudPlayers}
           loading={loading && !currentPlayers.length}
           error={error}
           assetsReady={assetsReady}
