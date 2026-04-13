@@ -10,7 +10,7 @@ export function useTeamStats() {
 
   async function fetchStats() {
     try {
-      const res = await fetch(`/team_stats.json?t=${Date.now()}`);
+      const res = await fetch(`${import.meta.env.BASE_URL}team_stats.json?t=${Date.now()}`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       const newPlayers = data.players ?? [];

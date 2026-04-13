@@ -73,7 +73,7 @@ export function usePlayback() {
   const timerRef = useRef(null);
 
   useEffect(() => {
-    fetch(`/history.json?t=${Date.now()}`)
+    fetch(`${import.meta.env.BASE_URL}history.json?t=${Date.now()}`)
       .then(r => r.json())
       .then(data => {
         if (Array.isArray(data) && data.length > 0) {
