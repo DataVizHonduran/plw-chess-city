@@ -70,7 +70,6 @@ export default function HUD({ players, loading, error, assetsReady, currentDate,
                     +{(p.mtd_plw ?? 0).toLocaleString()}
                   </span>
                 </span>
-                <span style={{ color, fontSize: 11 }}>T{tier} {TIER_LABEL[tier]}</span>
               </div>
             );
           })}
