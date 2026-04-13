@@ -24,10 +24,10 @@ function pick(arr, seed) {
 }
 
 export function assignZones(players) {
-  // Active players (PLW>0) first, then inactive — no gaps between active zones
+  // PLW=0 players first (top of iso grid, less visible), active players last (bottom, prominent)
   const sorted = [...players].sort((a, b) => {
-    const aActive = (a.cumulative_plw ?? 0) > 0 ? 0 : 1;
-    const bActive = (b.cumulative_plw ?? 0) > 0 ? 0 : 1;
+    const aActive = (a.cumulative_plw ?? 0) > 0 ? 1 : 0;
+    const bActive = (b.cumulative_plw ?? 0) > 0 ? 1 : 0;
     if (aActive !== bActive) return aActive - bActive;
     return a.player_id.localeCompare(b.player_id);
   });
