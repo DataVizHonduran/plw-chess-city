@@ -42,25 +42,25 @@ export default function CityCanvas() {
     });
   }, []);
 
-  // Live data
-  const { players: livePlayers, loading, error } = useTeamStats();
+  // Live data — only players who have scored
+  const { players: rawLivePlayers, loading, error } = useTeamStats();
+  const livePlayers = rawLivePlayers.filter(p => (p.cumulative_plw ?? 0) > 0);
   const liveCityState = useCityState(livePlayers, animRef);
 
   // Playback
   const { snapshots, currentIndex, currentPlayers, currentDate, isPlaying, isAtLatest, scrubTo, replay } = usePlayback();
 
-  // Compute city state for the current playback frame
+  // Compute city state for the current playback frame (PLW > 0 only)
+  const activePlayers = currentPlayers.filter(p => (p.cumulative_plw ?? 0) > 0);
   const prevPlaybackPlwRef = useRef({});
   useEffect(() => {
-    if (!currentPlayers.length) return;
+    if (!activePlayers.length) return;
 
-    // Trigger animations for PLW increases between playback frames
     const prevPlw = prevPlaybackPlwRef.current;
-    currentPlayers.forEach(p => {
+    activePlayers.forEach(p => {
       const prev = prevPlw[p.player_id] ?? 0;
       const curr = p.cumulative_plw ?? 0;
       if (curr > prev && animRef.current) {
-        // Skyscraper rise on crossing 1000
         if (curr >= 500 && prev < 500) {
           animRef.current.pendingRises.add(p.player_id);
           animRef.current.skyscraperProgress[p.player_id] = 0;
@@ -68,19 +68,17 @@ export default function CityCanvas() {
       }
     });
     prevPlaybackPlwRef.current = Object.fromEntries(
-      currentPlayers.map(p => [p.player_id, p.cumulative_plw ?? 0])
+      activePlayers.map(p => [p.player_id, p.cumulative_plw ?? 0])
     );
   }, [currentPlayers]);
 
-  // Sync city state ref: use playback state while playing, live state after
   useEffect(() => {
-    if (!currentPlayers.length) return;
-    const state = buildCityState(currentPlayers);
-    // Attach skyscraper progress from anim state
-    currentPlayers.forEach(p => {
+    if (!activePlayers.length) return;
+    const state = buildCityState(activePlayers);
+    activePlayers.forEach(p => {
       const cum = p.cumulative_plw ?? 0;
       if (cum >= 500 && animRef.current.skyscraperProgress[p.player_id] === undefined) {
-        animRef.current.skyscraperProgress[p.player_id] = 1; // already unlocked
+        animRef.current.skyscraperProgress[p.player_id] = 1;
       }
     });
     cityStateRef.current = state;
@@ -95,8 +93,8 @@ export default function CityCanvas() {
 
   useAnimationLoop(canvasRef, imagesRef, cityStateRef, animRef);
 
-  // Displayed players: during playback show historical, after show live
-  const displayPlayers = (!isAtLatest || isPlaying) ? currentPlayers : livePlayers;
+  // Displayed players: during playback show historical, after show live — PLW > 0 only
+  const displayPlayers = (!isAtLatest || isPlaying) ? activePlayers : livePlayers;
 
   return (
     <div style={{ background: '#1a1a2e', width: CANVAS_W, margin: '0 auto' }}>
