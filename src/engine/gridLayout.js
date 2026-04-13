@@ -26,8 +26,9 @@ function pick(arr, seed) {
 export function assignZones(players) {
   const sorted = [...players].sort((a, b) => a.player_id.localeCompare(b.player_id));
   const n = sorted.length;
-  const cols = Math.ceil(Math.sqrt(n));
-  const rows = Math.ceil(n / cols);
+  const gridN = Math.max(30, n);   // grid never shrinks below 30 slots
+  const cols = Math.ceil(Math.sqrt(gridN));
+  const rows = Math.ceil(gridN / cols);
   const zoneW = Math.floor(GRID_SIZE / cols);
   const zoneH = Math.floor(GRID_SIZE / rows);
 
