@@ -24,13 +24,9 @@ function pick(arr, seed) {
 }
 
 export function assignZones(players) {
-  // PLW=0 players first (top of iso grid, less visible), active players last (bottom, prominent)
-  const sorted = [...players].sort((a, b) => {
-    const aActive = (a.cumulative_plw ?? 0) > 0 ? 1 : 0;
-    const bActive = (b.cumulative_plw ?? 0) > 0 ? 1 : 0;
-    if (aActive !== bActive) return aActive - bActive;
-    return a.player_id.localeCompare(b.player_id);
-  });
+  // Use order as passed — caller is responsible for stable ordering.
+  // Never re-sort by PLW here or zones will jump during playback.
+  const sorted = [...players];
   const n = sorted.length;
   const cols = Math.ceil(Math.sqrt(n));
   const rows = Math.ceil(n / cols);

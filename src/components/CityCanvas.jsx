@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 import { CANVAS_W, CANVAS_H } from '../constants.js';
 import { MANIFEST } from '../assets/assetManifest.js';
 import { useTeamStats } from '../hooks/useTeamStats.js';
@@ -46,6 +46,20 @@ export default function CityCanvas() {
   const { players: livePlayers, loading, error } = useTeamStats();
   const liveCityState = useCityState(livePlayers, animRef);
 
+  // Stable zone order: computed once from final (live) state.
+  // PLW=0 players at top of grid, active players at bottom — FIXED for entire session.
+  const stableOrder = useMemo(() => {
+    if (!livePlayers.length) return [];
+    return [...livePlayers]
+      .sort((a, b) => {
+        const aActive = (a.cumulative_plw ?? 0) > 0 ? 1 : 0;
+        const bActive = (b.cumulative_plw ?? 0) > 0 ? 1 : 0;
+        if (aActive !== bActive) return aActive - bActive;
+        return a.player_id.localeCompare(b.player_id);
+      })
+      .map(p => p.player_id);
+  }, [livePlayers.length]); // only recompute if roster size changes
+
   // Playback
   const { snapshots, currentIndex, currentPlayers, currentDate, isPlaying, isAtLatest, scrubTo, replay } = usePlayback();
 
@@ -72,15 +86,19 @@ export default function CityCanvas() {
 
   useEffect(() => {
     if (!currentPlayers.length) return;
-    const state = buildCityState(currentPlayers);
-    currentPlayers.forEach(p => {
+    // Apply stable order so zones never jump during playback
+    const ordered = stableOrder.length
+      ? stableOrder.map(id => currentPlayers.find(p => p.player_id === id)).filter(Boolean)
+      : currentPlayers;
+    const state = buildCityState(ordered);
+    ordered.forEach(p => {
       const cum = p.cumulative_plw ?? 0;
       if (cum >= 500 && animRef.current.skyscraperProgress[p.player_id] === undefined) {
         animRef.current.skyscraperProgress[p.player_id] = 1;
       }
     });
     cityStateRef.current = state;
-  }, [currentPlayers]);
+  }, [currentPlayers, stableOrder]);
 
   const activePlayers = currentPlayers.filter(p => (p.cumulative_plw ?? 0) > 0);
 
