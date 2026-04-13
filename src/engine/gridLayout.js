@@ -24,7 +24,13 @@ function pick(arr, seed) {
 }
 
 export function assignZones(players) {
-  const sorted = [...players].sort((a, b) => a.player_id.localeCompare(b.player_id));
+  // Active players (PLW>0) first, then inactive — no gaps between active zones
+  const sorted = [...players].sort((a, b) => {
+    const aActive = (a.cumulative_plw ?? 0) > 0 ? 0 : 1;
+    const bActive = (b.cumulative_plw ?? 0) > 0 ? 0 : 1;
+    if (aActive !== bActive) return aActive - bActive;
+    return a.player_id.localeCompare(b.player_id);
+  });
   const n = sorted.length;
   const cols = Math.ceil(Math.sqrt(n));
   const rows = Math.ceil(n / cols);
