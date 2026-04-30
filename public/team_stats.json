@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-04-29T08:06:42.663481Z",
-  "total_team_plw": 4966,
+  "generated_at": "2026-04-30T08:10:44.110608Z",
+  "total_team_plw": 5192,
   "players": [
     {
       "player_id": "Ethan Metzer",
-      "mtd_plw": 927,
+      "mtd_plw": 1047,
       "base_plw": 0,
-      "cumulative_plw": 927,
+      "cumulative_plw": 1047,
       "uscf_rating": 1049,
-      "ck_rating": 1861,
+      "ck_rating": 1833,
       "grade": "3rd"
     },
     {
-      "player_id": "Jaxson Vanderpoole",
-      "mtd_plw": 661,
+      "player_id": "Anastassi Xenos",
+      "mtd_plw": 523,
       "base_plw": 0,
-      "cumulative_plw": 661,
-      "uscf_rating": 808,
-      "ck_rating": 1915,
+      "cumulative_plw": 523,
+      "uscf_rating": 824,
+      "ck_rating": 1719,
       "grade": "2nd"
     },
     {
-      "player_id": "Anastassi Xenos",
-      "mtd_plw": 454,
+      "player_id": "Jaxson Vanderpoole",
+      "mtd_plw": 460,
       "base_plw": 0,
-      "cumulative_plw": 454,
-      "uscf_rating": 824,
-      "ck_rating": 1703,
+      "cumulative_plw": 460,
+      "uscf_rating": 808,
+      "ck_rating": 1870,
       "grade": "2nd"
     },
     {
@@ -35,26 +35,17 @@
       "base_plw": 0,
       "cumulative_plw": 423,
       "uscf_rating": 1292,
-      "ck_rating": 2003,
+      "ck_rating": 2085,
       "grade": "5th"
     },
     {
       "player_id": "Sammy Fialkovskiy",
-      "mtd_plw": 415,
+      "mtd_plw": 385,
       "base_plw": 0,
-      "cumulative_plw": 415,
+      "cumulative_plw": 385,
       "uscf_rating": 615,
-      "ck_rating": 1755,
+      "ck_rating": 1735,
       "grade": "4th"
-    },
-    {
-      "player_id": "Drew Murphy",
-      "mtd_plw": 402,
-      "base_plw": 0,
-      "cumulative_plw": 402,
-      "uscf_rating": 934,
-      "ck_rating": 1758,
-      "grade": "3rd"
     },
     {
       "player_id": "Isha Varma",
@@ -62,97 +53,124 @@
       "base_plw": 0,
       "cumulative_plw": 378,
       "uscf_rating": 1257,
-      "ck_rating": 2080,
+      "ck_rating": 2117,
       "grade": "5th"
+    },
+    {
+      "player_id": "Drew Murphy",
+      "mtd_plw": 363,
+      "base_plw": 0,
+      "cumulative_plw": 363,
+      "uscf_rating": 934,
+      "ck_rating": 1776,
+      "grade": "3rd"
     },
     {
       "player_id": "Chloe Yip",
-      "mtd_plw": 220,
+      "mtd_plw": 208,
       "base_plw": 0,
-      "cumulative_plw": 220,
+      "cumulative_plw": 208,
       "uscf_rating": 948,
-      "ck_rating": 1978,
+      "ck_rating": 1960,
       "grade": "3rd"
-    },
-    {
-      "player_id": "Rami Padukone-Mitter",
-      "mtd_plw": 167,
-      "base_plw": 0,
-      "cumulative_plw": 167,
-      "uscf_rating": 1132,
-      "ck_rating": 1717,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Abby Noy",
-      "mtd_plw": 146,
-      "base_plw": 0,
-      "cumulative_plw": 146,
-      "uscf_rating": 685,
-      "ck_rating": 1708,
-      "grade": "5th"
-    },
-    {
-      "player_id": "Wyatt Lawson",
-      "mtd_plw": 102,
-      "base_plw": 0,
-      "cumulative_plw": 102,
-      "uscf_rating": 813,
-      "ck_rating": 1917,
-      "grade": "1st"
-    },
-    {
-      "player_id": "Chase grant",
-      "mtd_plw": 94,
-      "base_plw": 0,
-      "cumulative_plw": 94,
-      "uscf_rating": 478,
-      "ck_rating": 1347,
-      "grade": "2nd"
-    },
-    {
-      "player_id": "Yoomi Yoon-Winawer",
-      "mtd_plw": 93,
-      "base_plw": 0,
-      "cumulative_plw": 93,
-      "uscf_rating": 475,
-      "ck_rating": 1140,
-      "grade": "0K"
     },
     {
       "player_id": "Walter Gooch-Raushenbush",
-      "mtd_plw": 72,
+      "mtd_plw": 201,
       "base_plw": 0,
-      "cumulative_plw": 72,
+      "cumulative_plw": 201,
       "uscf_rating": 1355,
-      "ck_rating": 1723,
+      "ck_rating": 1829,
       "grade": "5th"
     },
     {
-      "player_id": "Glenn Gooch-Raushenbush",
-      "mtd_plw": 71,
+      "player_id": "Rami Padukone-Mitter",
+      "mtd_plw": 157,
       "base_plw": 0,
-      "cumulative_plw": 71,
-      "uscf_rating": 1028,
-      "ck_rating": 1766,
-      "grade": "2nd"
-    },
-    {
-      "player_id": "Alejandro Sheikh",
-      "mtd_plw": 71,
-      "base_plw": 0,
-      "cumulative_plw": 71,
-      "uscf_rating": 731,
-      "ck_rating": 1659,
+      "cumulative_plw": 157,
+      "uscf_rating": 1132,
+      "ck_rating": 1758,
       "grade": "3rd"
     },
     {
-      "player_id": "Myla Walavalkar",
-      "mtd_plw": 64,
+      "player_id": "Glenn Gooch-Raushenbush",
+      "mtd_plw": 137,
       "base_plw": 0,
-      "cumulative_plw": 64,
+      "cumulative_plw": 137,
+      "uscf_rating": 1028,
+      "ck_rating": 1901,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Chase grant",
+      "mtd_plw": 130,
+      "base_plw": 0,
+      "cumulative_plw": 130,
+      "uscf_rating": 478,
+      "ck_rating": 1369,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Abby Noy",
+      "mtd_plw": 124,
+      "base_plw": 0,
+      "cumulative_plw": 124,
+      "uscf_rating": 685,
+      "ck_rating": 1588,
+      "grade": "5th"
+    },
+    {
+      "player_id": "Yoomi Yoon-Winawer",
+      "mtd_plw": 100,
+      "base_plw": 0,
+      "cumulative_plw": 100,
+      "uscf_rating": 475,
+      "ck_rating": 1145,
+      "grade": "0K"
+    },
+    {
+      "player_id": "Wyatt Lawson",
+      "mtd_plw": 84,
+      "base_plw": 0,
+      "cumulative_plw": 84,
+      "uscf_rating": 813,
+      "ck_rating": 1892,
+      "grade": "1st"
+    },
+    {
+      "player_id": "Brian Silverman",
+      "mtd_plw": 78,
+      "base_plw": 0,
+      "cumulative_plw": 78,
+      "uscf_rating": 962,
+      "ck_rating": 1811,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Myla Walavalkar",
+      "mtd_plw": 60,
+      "base_plw": 0,
+      "cumulative_plw": 60,
       "uscf_rating": 319,
       "ck_rating": 1376,
+      "grade": "1st"
+    },
+    {
+      "player_id": "Jeremy Chow",
+      "mtd_plw": 54,
+      "base_plw": 0,
+      "cumulative_plw": 54,
+      "uscf_rating": 260,
+      "ck_rating": 1501,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Jakob Latour",
+      "mtd_plw": 46,
+      "base_plw": 0,
+      "cumulative_plw": 46,
+      "uscf_rating": 131,
+      "ck_rating": 1019,
       "grade": "1st"
     },
     {
@@ -165,15 +183,6 @@
       "grade": "3rd"
     },
     {
-      "player_id": "Brian Silverman",
-      "mtd_plw": 45,
-      "base_plw": 0,
-      "cumulative_plw": 45,
-      "uscf_rating": 962,
-      "ck_rating": 1823,
-      "grade": "2nd"
-    },
-    {
       "player_id": "LILIAH FETTNER",
       "mtd_plw": 45,
       "base_plw": 0,
@@ -183,21 +192,30 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Jeremy Chow",
-      "mtd_plw": 30,
+      "player_id": "Oliver Lee",
+      "mtd_plw": 43,
       "base_plw": 0,
-      "cumulative_plw": 30,
-      "uscf_rating": 260,
-      "ck_rating": 1522,
+      "cumulative_plw": 43,
+      "uscf_rating": 424,
+      "ck_rating": 1131,
+      "grade": "4th"
+    },
+    {
+      "player_id": "Alejandro Sheikh",
+      "mtd_plw": 41,
+      "base_plw": 0,
+      "cumulative_plw": 41,
+      "uscf_rating": 731,
+      "ck_rating": 1659,
       "grade": "3rd"
     },
     {
       "player_id": "Adam Atwa",
-      "mtd_plw": 16,
+      "mtd_plw": 35,
       "base_plw": 0,
-      "cumulative_plw": 16,
+      "cumulative_plw": 35,
       "uscf_rating": 707,
-      "ck_rating": 1793,
+      "ck_rating": 1776,
       "grade": "1st"
     },
     {
@@ -282,15 +300,6 @@
       "grade": "5th"
     },
     {
-      "player_id": "Jakob Latour",
-      "mtd_plw": 0,
-      "base_plw": 0,
-      "cumulative_plw": 0,
-      "uscf_rating": 131,
-      "ck_rating": 744,
-      "grade": "1st"
-    },
-    {
       "player_id": "James LaBarbera",
       "mtd_plw": 0,
       "base_plw": 0,
@@ -342,15 +351,6 @@
       "cumulative_plw": 0,
       "uscf_rating": 1107,
       "ck_rating": 2204,
-      "grade": "4th"
-    },
-    {
-      "player_id": "Oliver Lee",
-      "mtd_plw": 0,
-      "base_plw": 0,
-      "cumulative_plw": 0,
-      "uscf_rating": 424,
-      "ck_rating": 804,
       "grade": "4th"
     },
     {
