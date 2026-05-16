@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-05-15T08:42:06.737632Z",
-  "total_team_plw": 2753,
+  "generated_at": "2026-05-16T07:55:38.537921Z",
+  "total_team_plw": 2831,
   "players": [
     {
       "player_id": "Anastassi Xenos",
-      "mtd_plw": 322,
+      "mtd_plw": 331,
       "base_plw": 0,
-      "cumulative_plw": 322,
+      "cumulative_plw": 331,
       "uscf_rating": 837,
-      "ck_rating": 1739,
+      "ck_rating": 1705,
       "grade": "2nd"
     },
     {
       "player_id": "Sammy Fialkovskiy",
-      "mtd_plw": 317,
+      "mtd_plw": 263,
       "base_plw": 0,
-      "cumulative_plw": 317,
+      "cumulative_plw": 263,
       "uscf_rating": 658,
-      "ck_rating": 1813,
+      "ck_rating": 1737,
       "grade": "4th"
     },
     {
@@ -31,29 +31,29 @@
     },
     {
       "player_id": "Chloe Yip",
-      "mtd_plw": 241,
+      "mtd_plw": 246,
       "base_plw": 0,
-      "cumulative_plw": 241,
+      "cumulative_plw": 246,
       "uscf_rating": 1031,
-      "ck_rating": 1949,
+      "ck_rating": 1927,
       "grade": "3rd"
     },
     {
       "player_id": "Drew Murphy",
-      "mtd_plw": 231,
+      "mtd_plw": 198,
       "base_plw": 0,
-      "cumulative_plw": 231,
+      "cumulative_plw": 198,
       "uscf_rating": 977,
-      "ck_rating": 1734,
+      "ck_rating": 1758,
       "grade": "3rd"
     },
     {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 176,
+      "mtd_plw": 188,
       "base_plw": 0,
-      "cumulative_plw": 176,
+      "cumulative_plw": 188,
       "uscf_rating": 865,
-      "ck_rating": 1937,
+      "ck_rating": 1952,
       "grade": "1st"
     },
     {
@@ -66,13 +66,40 @@
       "grade": "1st"
     },
     {
-      "player_id": "Isha Varma",
-      "mtd_plw": 115,
+      "player_id": "Jeremy Chow",
+      "mtd_plw": 126,
       "base_plw": 0,
-      "cumulative_plw": 115,
+      "cumulative_plw": 126,
+      "uscf_rating": 260,
+      "ck_rating": 1481,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Ethan Metzer",
+      "mtd_plw": 126,
+      "base_plw": 0,
+      "cumulative_plw": 126,
+      "uscf_rating": 1077,
+      "ck_rating": 1761,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Isha Varma",
+      "mtd_plw": 112,
+      "base_plw": 0,
+      "cumulative_plw": 112,
       "uscf_rating": 1274,
-      "ck_rating": 2025,
+      "ck_rating": 2057,
       "grade": "5th"
+    },
+    {
+      "player_id": "Rafael Boquin",
+      "mtd_plw": 106,
+      "base_plw": 0,
+      "cumulative_plw": 106,
+      "uscf_rating": 483,
+      "ck_rating": 1552,
+      "grade": "1st"
     },
     {
       "player_id": "Chase grant",
@@ -84,15 +111,6 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Jeremy Chow",
-      "mtd_plw": 92,
-      "base_plw": 0,
-      "cumulative_plw": 92,
-      "uscf_rating": 260,
-      "ck_rating": 1386,
-      "grade": "3rd"
-    },
-    {
       "player_id": "Oliver Lee",
       "mtd_plw": 88,
       "base_plw": 0,
@@ -102,22 +120,13 @@
       "grade": "4th"
     },
     {
-      "player_id": "Rafael Boquin",
-      "mtd_plw": 82,
+      "player_id": "Glenn Gooch-Raushenbush",
+      "mtd_plw": 72,
       "base_plw": 0,
-      "cumulative_plw": 82,
-      "uscf_rating": 483,
-      "ck_rating": 1501,
-      "grade": "1st"
-    },
-    {
-      "player_id": "Ethan Metzer",
-      "mtd_plw": 69,
-      "base_plw": 0,
-      "cumulative_plw": 69,
-      "uscf_rating": 1077,
-      "ck_rating": 1731,
-      "grade": "3rd"
+      "cumulative_plw": 72,
+      "uscf_rating": 1040,
+      "ck_rating": 1910,
+      "grade": "2nd"
     },
     {
       "player_id": "LILIAH FETTNER",
@@ -126,15 +135,6 @@
       "cumulative_plw": 67,
       "uscf_rating": 673,
       "ck_rating": 1595,
-      "grade": "2nd"
-    },
-    {
-      "player_id": "Glenn Gooch-Raushenbush",
-      "mtd_plw": 66,
-      "base_plw": 0,
-      "cumulative_plw": 66,
-      "uscf_rating": 1040,
-      "ck_rating": 1947,
       "grade": "2nd"
     },
     {
@@ -147,22 +147,22 @@
       "grade": "3rd"
     },
     {
-      "player_id": "Weston Hu",
-      "mtd_plw": 62,
+      "player_id": "Theodore Lewis",
+      "mtd_plw": 61,
       "base_plw": 0,
-      "cumulative_plw": 62,
+      "cumulative_plw": 61,
+      "uscf_rating": 1416,
+      "ck_rating": 2193,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Weston Hu",
+      "mtd_plw": 50,
+      "base_plw": 0,
+      "cumulative_plw": 50,
       "uscf_rating": 430,
       "ck_rating": 1764,
       "grade": "2nd"
-    },
-    {
-      "player_id": "Theodore Lewis",
-      "mtd_plw": 51,
-      "base_plw": 0,
-      "cumulative_plw": 51,
-      "uscf_rating": 1416,
-      "ck_rating": 2183,
-      "grade": "3rd"
     },
     {
       "player_id": "Jaxson Vanderpoole",
@@ -181,6 +181,15 @@
       "uscf_rating": 329,
       "ck_rating": 1066,
       "grade": "0K"
+    },
+    {
+      "player_id": "Jakob Latour",
+      "mtd_plw": 38,
+      "base_plw": 0,
+      "cumulative_plw": 38,
+      "uscf_rating": 131,
+      "ck_rating": 1033,
+      "grade": "1st"
     },
     {
       "player_id": "Abby Noy",
@@ -237,15 +246,6 @@
       "grade": "3rd"
     },
     {
-      "player_id": "Theodore Meng",
-      "mtd_plw": 9,
-      "base_plw": 0,
-      "cumulative_plw": 9,
-      "uscf_rating": 1327,
-      "ck_rating": 2150,
-      "grade": "4th"
-    },
-    {
       "player_id": "Alejandro Sheikh",
       "mtd_plw": 6,
       "base_plw": 0,
@@ -253,15 +253,6 @@
       "uscf_rating": 631,
       "ck_rating": 100,
       "grade": "3rd"
-    },
-    {
-      "player_id": "Jakob Latour",
-      "mtd_plw": 6,
-      "base_plw": 0,
-      "cumulative_plw": 6,
-      "uscf_rating": 131,
-      "ck_rating": 1001,
-      "grade": "1st"
     },
     {
       "player_id": "James LaBarbera",
@@ -379,6 +370,15 @@
       "uscf_rating": 1274,
       "ck_rating": 1939,
       "grade": "5th"
+    },
+    {
+      "player_id": "Theodore Meng",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 1327,
+      "ck_rating": 2139,
+      "grade": "4th"
     },
     {
       "player_id": "Walter Gooch-Raushenbush",
