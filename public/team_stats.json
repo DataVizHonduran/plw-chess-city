@@ -1,42 +1,51 @@
 {
-  "generated_at": "2026-05-21T09:28:04.561092Z",
-  "total_team_plw": 2671,
+  "generated_at": "2026-05-22T08:52:51.493165Z",
+  "total_team_plw": 2795,
   "players": [
     {
       "player_id": "Drew Murphy",
-      "mtd_plw": 399,
+      "mtd_plw": 411,
       "base_plw": 0,
-      "cumulative_plw": 399,
+      "cumulative_plw": 411,
       "uscf_rating": 1003,
-      "ck_rating": 1785,
+      "ck_rating": 1806,
       "grade": "3rd"
     },
     {
       "player_id": "Anastassi Xenos",
-      "mtd_plw": 318,
+      "mtd_plw": 360,
       "base_plw": 0,
-      "cumulative_plw": 318,
+      "cumulative_plw": 360,
       "uscf_rating": 762,
-      "ck_rating": 1806,
+      "ck_rating": 1718,
       "grade": "2nd"
     },
     {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 285,
+      "mtd_plw": 291,
       "base_plw": 0,
-      "cumulative_plw": 285,
+      "cumulative_plw": 291,
       "uscf_rating": 865,
-      "ck_rating": 2004,
+      "ck_rating": 2013,
       "grade": "1st"
     },
     {
-      "player_id": "Isha Varma",
-      "mtd_plw": 232,
+      "player_id": "Chase grant",
+      "mtd_plw": 184,
       "base_plw": 0,
-      "cumulative_plw": 232,
-      "uscf_rating": 1247,
-      "ck_rating": 2108,
-      "grade": "5th"
+      "cumulative_plw": 184,
+      "uscf_rating": 582,
+      "ck_rating": 1395,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Ethan Metzer",
+      "mtd_plw": 168,
+      "base_plw": 0,
+      "cumulative_plw": 168,
+      "uscf_rating": 1077,
+      "ck_rating": 1854,
+      "grade": "3rd"
     },
     {
       "player_id": "Jeremy Chow",
@@ -48,58 +57,49 @@
       "grade": "3rd"
     },
     {
-      "player_id": "Sammy Fialkovskiy",
-      "mtd_plw": 155,
+      "player_id": "Isha Varma",
+      "mtd_plw": 159,
       "base_plw": 0,
-      "cumulative_plw": 155,
+      "cumulative_plw": 159,
+      "uscf_rating": 1247,
+      "ck_rating": 2105,
+      "grade": "5th"
+    },
+    {
+      "player_id": "Kai Tang",
+      "mtd_plw": 158,
+      "base_plw": 0,
+      "cumulative_plw": 158,
+      "uscf_rating": 479,
+      "ck_rating": 1544,
+      "grade": "0K"
+    },
+    {
+      "player_id": "Sammy Fialkovskiy",
+      "mtd_plw": 145,
+      "base_plw": 0,
+      "cumulative_plw": 145,
       "uscf_rating": 656,
       "ck_rating": 1706,
       "grade": "4th"
     },
     {
-      "player_id": "Ethan Metzer",
-      "mtd_plw": 150,
-      "base_plw": 0,
-      "cumulative_plw": 150,
-      "uscf_rating": 1077,
-      "ck_rating": 1821,
-      "grade": "3rd"
-    },
-    {
       "player_id": "Adam Atwa",
-      "mtd_plw": 118,
+      "mtd_plw": 121,
       "base_plw": 0,
-      "cumulative_plw": 118,
+      "cumulative_plw": 121,
       "uscf_rating": 779,
-      "ck_rating": 1774,
+      "ck_rating": 1764,
       "grade": "1st"
     },
     {
       "player_id": "Abby Noy",
-      "mtd_plw": 112,
+      "mtd_plw": 104,
       "base_plw": 0,
-      "cumulative_plw": 112,
+      "cumulative_plw": 104,
       "uscf_rating": 706,
-      "ck_rating": 1674,
+      "ck_rating": 1653,
       "grade": "5th"
-    },
-    {
-      "player_id": "Chloe Yip",
-      "mtd_plw": 112,
-      "base_plw": 0,
-      "cumulative_plw": 112,
-      "uscf_rating": 1031,
-      "ck_rating": 1873,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Chase grant",
-      "mtd_plw": 90,
-      "base_plw": 0,
-      "cumulative_plw": 90,
-      "uscf_rating": 582,
-      "ck_rating": 1438,
-      "grade": "2nd"
     },
     {
       "player_id": "Lyra Mattis",
@@ -120,22 +120,31 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Glenn Gooch-Raushenbush",
-      "mtd_plw": 64,
+      "player_id": "Chloe Yip",
+      "mtd_plw": 61,
       "base_plw": 0,
-      "cumulative_plw": 64,
+      "cumulative_plw": 61,
+      "uscf_rating": 1031,
+      "ck_rating": 1877,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Glenn Gooch-Raushenbush",
+      "mtd_plw": 49,
+      "base_plw": 0,
+      "cumulative_plw": 49,
       "uscf_rating": 1036,
       "ck_rating": 1907,
       "grade": "2nd"
     },
     {
-      "player_id": "Oliver Lee",
-      "mtd_plw": 40,
+      "player_id": "Theodore Lewis",
+      "mtd_plw": 42,
       "base_plw": 0,
-      "cumulative_plw": 40,
-      "uscf_rating": 424,
-      "ck_rating": 1358,
-      "grade": "4th"
+      "cumulative_plw": 42,
+      "uscf_rating": 1400,
+      "ck_rating": 2176,
+      "grade": "3rd"
     },
     {
       "player_id": "LILIAH FETTNER",
@@ -165,31 +174,22 @@
       "grade": "1st"
     },
     {
-      "player_id": "Theodore Lewis",
-      "mtd_plw": 32,
-      "base_plw": 0,
-      "cumulative_plw": 32,
-      "uscf_rating": 1400,
-      "ck_rating": 2176,
-      "grade": "3rd"
-    },
-    {
       "player_id": "Brian Silverman",
-      "mtd_plw": 30,
+      "mtd_plw": 24,
       "base_plw": 0,
-      "cumulative_plw": 30,
+      "cumulative_plw": 24,
       "uscf_rating": 943,
-      "ck_rating": 1939,
+      "ck_rating": 1910,
       "grade": "2nd"
     },
     {
-      "player_id": "Jax Kim",
-      "mtd_plw": 26,
+      "player_id": "Jaxson Vanderpoole",
+      "mtd_plw": 24,
       "base_plw": 0,
-      "cumulative_plw": 26,
-      "uscf_rating": 673,
-      "ck_rating": 1822,
-      "grade": "5th"
+      "cumulative_plw": 24,
+      "uscf_rating": 772,
+      "ck_rating": 1796,
+      "grade": "2nd"
     },
     {
       "player_id": "Rafael Boquin",
@@ -201,22 +201,13 @@
       "grade": "1st"
     },
     {
-      "player_id": "Kai Tang",
-      "mtd_plw": 18,
-      "base_plw": 0,
-      "cumulative_plw": 18,
-      "uscf_rating": 479,
-      "ck_rating": 1544,
-      "grade": "0K"
-    },
-    {
-      "player_id": "Jaxson Vanderpoole",
+      "player_id": "Jax Kim",
       "mtd_plw": 12,
       "base_plw": 0,
       "cumulative_plw": 12,
-      "uscf_rating": 772,
-      "ck_rating": 1758,
-      "grade": "2nd"
+      "uscf_rating": 673,
+      "ck_rating": 1793,
+      "grade": "5th"
     },
     {
       "player_id": "Babis Theodoratos",
@@ -234,6 +225,15 @@
       "cumulative_plw": 6,
       "uscf_rating": 1330,
       "ck_rating": 2135,
+      "grade": "4th"
+    },
+    {
+      "player_id": "Oliver Lee",
+      "mtd_plw": 4,
+      "base_plw": 0,
+      "cumulative_plw": 4,
+      "uscf_rating": 424,
+      "ck_rating": 1358,
       "grade": "4th"
     },
     {
