@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-10T09:44:24.134026Z",
-  "total_team_plw": 3061,
+  "generated_at": "2026-06-11T10:13:21.293711Z",
+  "total_team_plw": 2886,
   "players": [
     {
-      "player_id": "Danica Lee",
-      "mtd_plw": 348,
+      "player_id": "Adam Atwa",
+      "mtd_plw": 298,
       "base_plw": 0,
-      "cumulative_plw": 348,
-      "uscf_rating": 100,
-      "ck_rating": 1247,
-      "grade": "2nd"
+      "cumulative_plw": 298,
+      "uscf_rating": 757,
+      "ck_rating": 1750,
+      "grade": "1st"
     },
     {
       "player_id": "Drew Murphy",
-      "mtd_plw": 294,
+      "mtd_plw": 252,
       "base_plw": 0,
-      "cumulative_plw": 294,
+      "cumulative_plw": 252,
       "uscf_rating": 1096,
       "ck_rating": 1823,
       "grade": "3rd"
     },
     {
-      "player_id": "Adam Atwa",
-      "mtd_plw": 262,
+      "player_id": "Ethan Metzer",
+      "mtd_plw": 225,
       "base_plw": 0,
-      "cumulative_plw": 262,
-      "uscf_rating": 757,
-      "ck_rating": 1735,
-      "grade": "1st"
+      "cumulative_plw": 225,
+      "uscf_rating": 1095,
+      "ck_rating": 1872,
+      "grade": "3rd"
     },
     {
       "player_id": "Wyatt Lawson",
@@ -35,35 +35,44 @@
       "base_plw": 0,
       "cumulative_plw": 214,
       "uscf_rating": 910,
-      "ck_rating": 1901,
+      "ck_rating": 1935,
       "grade": "1st"
     },
     {
-      "player_id": "Ethan Metzer",
-      "mtd_plw": 174,
+      "player_id": "Danica Lee",
+      "mtd_plw": 190,
       "base_plw": 0,
-      "cumulative_plw": 174,
-      "uscf_rating": 1095,
-      "ck_rating": 1941,
-      "grade": "3rd"
+      "cumulative_plw": 190,
+      "uscf_rating": 100,
+      "ck_rating": 1247,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Jules Jaindl",
+      "mtd_plw": 170,
+      "base_plw": 0,
+      "cumulative_plw": 170,
+      "uscf_rating": 337,
+      "ck_rating": 1345,
+      "grade": "1st"
+    },
+    {
+      "player_id": "Oliver Lee",
+      "mtd_plw": 164,
+      "base_plw": 0,
+      "cumulative_plw": 164,
+      "uscf_rating": 366,
+      "ck_rating": 1307,
+      "grade": "4th"
     },
     {
       "player_id": "Isha Varma",
-      "mtd_plw": 162,
+      "mtd_plw": 138,
       "base_plw": 0,
-      "cumulative_plw": 162,
+      "cumulative_plw": 138,
       "uscf_rating": 1287,
-      "ck_rating": 2219,
+      "ck_rating": 2234,
       "grade": "5th"
-    },
-    {
-      "player_id": "Eleanor Lee",
-      "mtd_plw": 152,
-      "base_plw": 0,
-      "cumulative_plw": 152,
-      "uscf_rating": 100,
-      "ck_rating": 1243,
-      "grade": "2nd"
     },
     {
       "player_id": "Dylan Yip",
@@ -84,24 +93,6 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Jules Jaindl",
-      "mtd_plw": 120,
-      "base_plw": 0,
-      "cumulative_plw": 120,
-      "uscf_rating": 337,
-      "ck_rating": 1363,
-      "grade": "1st"
-    },
-    {
-      "player_id": "Oliver Lee",
-      "mtd_plw": 98,
-      "base_plw": 0,
-      "cumulative_plw": 98,
-      "uscf_rating": 366,
-      "ck_rating": 1255,
-      "grade": "4th"
-    },
-    {
       "player_id": "Kai Tang",
       "mtd_plw": 96,
       "base_plw": 0,
@@ -116,44 +107,62 @@
       "base_plw": 0,
       "cumulative_plw": 92,
       "uscf_rating": 531,
-      "ck_rating": 1381,
+      "ck_rating": 1336,
       "grade": "0K"
     },
     {
-      "player_id": "Chase grant",
-      "mtd_plw": 88,
+      "player_id": "Eleanor Lee",
+      "mtd_plw": 84,
       "base_plw": 0,
-      "cumulative_plw": 88,
+      "cumulative_plw": 84,
+      "uscf_rating": 100,
+      "ck_rating": 1243,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Chase grant",
+      "mtd_plw": 80,
+      "base_plw": 0,
+      "cumulative_plw": 80,
       "uscf_rating": 498,
       "ck_rating": 1497,
       "grade": "2nd"
     },
     {
-      "player_id": "Sammy Fialkovskiy",
-      "mtd_plw": 84,
+      "player_id": "Chloe Yip",
+      "mtd_plw": 69,
       "base_plw": 0,
-      "cumulative_plw": 84,
+      "cumulative_plw": 69,
+      "uscf_rating": 1080,
+      "ck_rating": 1916,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Sammy Fialkovskiy",
+      "mtd_plw": 69,
+      "base_plw": 0,
+      "cumulative_plw": 69,
       "uscf_rating": 640,
       "ck_rating": 1717,
       "grade": "4th"
     },
     {
-      "player_id": "Dylen Duke",
-      "mtd_plw": 70,
+      "player_id": "Jacob Saleh",
+      "mtd_plw": 65,
       "base_plw": 0,
-      "cumulative_plw": 70,
-      "uscf_rating": 376,
-      "ck_rating": 1405,
-      "grade": "1st"
+      "cumulative_plw": 65,
+      "uscf_rating": 309,
+      "ck_rating": 1267,
+      "grade": "2nd"
     },
     {
-      "player_id": "Theodore Lewis",
-      "mtd_plw": 66,
+      "player_id": "Arin Dhami",
+      "mtd_plw": 56,
       "base_plw": 0,
-      "cumulative_plw": 66,
-      "uscf_rating": 1292,
-      "ck_rating": 2149,
-      "grade": "3rd"
+      "cumulative_plw": 56,
+      "uscf_rating": 303,
+      "ck_rating": 1291,
+      "grade": "0K"
     },
     {
       "player_id": "Jaxson Vanderpoole",
@@ -162,42 +171,6 @@
       "cumulative_plw": 51,
       "uscf_rating": 888,
       "ck_rating": 1723,
-      "grade": "2nd"
-    },
-    {
-      "player_id": "Arin Dhami",
-      "mtd_plw": 50,
-      "base_plw": 0,
-      "cumulative_plw": 50,
-      "uscf_rating": 303,
-      "ck_rating": 1311,
-      "grade": "0K"
-    },
-    {
-      "player_id": "Chloe Yip",
-      "mtd_plw": 49,
-      "base_plw": 0,
-      "cumulative_plw": 49,
-      "uscf_rating": 1080,
-      "ck_rating": 1920,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Rami Padukone-Mitter",
-      "mtd_plw": 48,
-      "base_plw": 0,
-      "cumulative_plw": 48,
-      "uscf_rating": 1198,
-      "ck_rating": 1831,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Jacob Saleh",
-      "mtd_plw": 44,
-      "base_plw": 0,
-      "cumulative_plw": 44,
-      "uscf_rating": 309,
-      "ck_rating": 1257,
       "grade": "2nd"
     },
     {
@@ -210,6 +183,15 @@
       "grade": "3rd"
     },
     {
+      "player_id": "Theodore Lewis",
+      "mtd_plw": 44,
+      "base_plw": 0,
+      "cumulative_plw": 44,
+      "uscf_rating": 1292,
+      "ck_rating": 2153,
+      "grade": "3rd"
+    },
+    {
       "player_id": "Lyra Mattis",
       "mtd_plw": 34,
       "base_plw": 0,
@@ -217,6 +199,15 @@
       "uscf_rating": 222,
       "ck_rating": 1336,
       "grade": "0K"
+    },
+    {
+      "player_id": "Abby Noy",
+      "mtd_plw": 28,
+      "base_plw": 0,
+      "cumulative_plw": 28,
+      "uscf_rating": 695,
+      "ck_rating": 1645,
+      "grade": "5th"
     },
     {
       "player_id": "Babis Theodoratos",
@@ -237,22 +228,31 @@
       "grade": "5th"
     },
     {
-      "player_id": "Jayden Duke",
-      "mtd_plw": 26,
+      "player_id": "Dylen Duke",
+      "mtd_plw": 20,
       "base_plw": 0,
-      "cumulative_plw": 26,
-      "uscf_rating": 453,
-      "ck_rating": 1468,
-      "grade": "2nd"
+      "cumulative_plw": 20,
+      "uscf_rating": 376,
+      "ck_rating": 1340,
+      "grade": "1st"
     },
     {
-      "player_id": "Abby Noy",
-      "mtd_plw": 22,
+      "player_id": "Matilda Buckmaster",
+      "mtd_plw": 20,
       "base_plw": 0,
-      "cumulative_plw": 22,
-      "uscf_rating": 695,
-      "ck_rating": 1631,
-      "grade": "5th"
+      "cumulative_plw": 20,
+      "uscf_rating": 323,
+      "ck_rating": 1914,
+      "grade": "0K"
+    },
+    {
+      "player_id": "Rami Padukone-Mitter",
+      "mtd_plw": 12,
+      "base_plw": 0,
+      "cumulative_plw": 12,
+      "uscf_rating": 1198,
+      "ck_rating": 1831,
+      "grade": "3rd"
     },
     {
       "player_id": "Walter Gooch-Raushenbush",
@@ -273,13 +273,13 @@
       "grade": "1st"
     },
     {
-      "player_id": "Zachary Berger",
-      "mtd_plw": 12,
+      "player_id": "Jayden Duke",
+      "mtd_plw": 10,
       "base_plw": 0,
-      "cumulative_plw": 12,
-      "uscf_rating": 102,
-      "ck_rating": 1387,
-      "grade": "3rd"
+      "cumulative_plw": 10,
+      "uscf_rating": 453,
+      "ck_rating": 1468,
+      "grade": "2nd"
     },
     {
       "player_id": "Glenn Gooch-Raushenbush",
@@ -390,15 +390,6 @@
       "grade": "1st"
     },
     {
-      "player_id": "Matilda Buckmaster",
-      "mtd_plw": 0,
-      "base_plw": 0,
-      "cumulative_plw": 0,
-      "uscf_rating": 323,
-      "ck_rating": 1914,
-      "grade": "0K"
-    },
-    {
       "player_id": "Myla Walavalkar",
       "mtd_plw": 0,
       "base_plw": 0,
@@ -469,6 +460,15 @@
       "uscf_rating": 294,
       "ck_rating": 981,
       "grade": "5th"
+    },
+    {
+      "player_id": "Zachary Berger",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 102,
+      "ck_rating": 1387,
+      "grade": "3rd"
     }
   ]
 }
