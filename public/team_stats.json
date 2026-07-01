@@ -1,24 +1,15 @@
 {
-  "generated_at": "2026-06-30T09:22:41.813585Z",
-  "total_team_plw": 1274,
+  "generated_at": "2026-07-01T09:35:06.783903Z",
+  "total_team_plw": 1210,
   "players": [
     {
       "player_id": "Drew Murphy",
-      "mtd_plw": 327,
+      "mtd_plw": 354,
       "base_plw": 0,
-      "cumulative_plw": 327,
+      "cumulative_plw": 354,
       "uscf_rating": 1001,
-      "ck_rating": 1793,
+      "ck_rating": 1752,
       "grade": "3rd"
-    },
-    {
-      "player_id": "Wyatt Lawson",
-      "mtd_plw": 136,
-      "base_plw": 0,
-      "cumulative_plw": 136,
-      "uscf_rating": 1063,
-      "ck_rating": 1974,
-      "grade": "1st"
     },
     {
       "player_id": "Brian Silverman",
@@ -30,6 +21,24 @@
       "grade": "2nd"
     },
     {
+      "player_id": "Wyatt Lawson",
+      "mtd_plw": 114,
+      "base_plw": 0,
+      "cumulative_plw": 114,
+      "uscf_rating": 1063,
+      "ck_rating": 1980,
+      "grade": "1st"
+    },
+    {
+      "player_id": "Chloe Yip",
+      "mtd_plw": 103,
+      "base_plw": 0,
+      "cumulative_plw": 103,
+      "uscf_rating": 1025,
+      "ck_rating": 1913,
+      "grade": "3rd"
+    },
+    {
       "player_id": "LILIAH FETTNER",
       "mtd_plw": 91,
       "base_plw": 0,
@@ -39,48 +48,30 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Chase grant",
-      "mtd_plw": 88,
+      "player_id": "Dylan Yip",
+      "mtd_plw": 82,
       "base_plw": 0,
-      "cumulative_plw": 88,
+      "cumulative_plw": 82,
+      "uscf_rating": 306,
+      "ck_rating": 1036,
+      "grade": "0K"
+    },
+    {
+      "player_id": "Chase grant",
+      "mtd_plw": 54,
+      "base_plw": 0,
+      "cumulative_plw": 54,
       "uscf_rating": 637,
       "ck_rating": 1431,
       "grade": "2nd"
     },
     {
-      "player_id": "Sammy Fialkovskiy",
-      "mtd_plw": 83,
-      "base_plw": 0,
-      "cumulative_plw": 83,
-      "uscf_rating": 928,
-      "ck_rating": 1691,
-      "grade": "4th"
-    },
-    {
-      "player_id": "Chloe Yip",
-      "mtd_plw": 82,
-      "base_plw": 0,
-      "cumulative_plw": 82,
-      "uscf_rating": 1025,
-      "ck_rating": 2011,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Dylan Yip",
-      "mtd_plw": 80,
-      "base_plw": 0,
-      "cumulative_plw": 80,
-      "uscf_rating": 306,
-      "ck_rating": 1019,
-      "grade": "0K"
-    },
-    {
       "player_id": "Dylan Wu",
-      "mtd_plw": 38,
+      "mtd_plw": 44,
       "base_plw": 0,
-      "cumulative_plw": 38,
+      "cumulative_plw": 44,
       "uscf_rating": 589,
-      "ck_rating": 1432,
+      "ck_rating": 1460,
       "grade": "0K"
     },
     {
@@ -103,12 +94,21 @@
     },
     {
       "player_id": "Ethan Metzer",
-      "mtd_plw": 36,
+      "mtd_plw": 30,
       "base_plw": 0,
-      "cumulative_plw": 36,
+      "cumulative_plw": 30,
       "uscf_rating": 1206,
       "ck_rating": 1894,
       "grade": "3rd"
+    },
+    {
+      "player_id": "Arin Dhami",
+      "mtd_plw": 30,
+      "base_plw": 0,
+      "cumulative_plw": 30,
+      "uscf_rating": 320,
+      "ck_rating": 1295,
+      "grade": "0K"
     },
     {
       "player_id": "Jaxson Vanderpoole",
@@ -129,22 +129,13 @@
       "grade": "0K"
     },
     {
-      "player_id": "Rami Padukone-Mitter",
-      "mtd_plw": 15,
+      "player_id": "Sammy Fialkovskiy",
+      "mtd_plw": 25,
       "base_plw": 0,
-      "cumulative_plw": 15,
-      "uscf_rating": 1167,
-      "ck_rating": 1865,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Arin Dhami",
-      "mtd_plw": 15,
-      "base_plw": 0,
-      "cumulative_plw": 15,
-      "uscf_rating": 320,
-      "ck_rating": 1291,
-      "grade": "0K"
+      "cumulative_plw": 25,
+      "uscf_rating": 928,
+      "ck_rating": 1691,
+      "grade": "4th"
     },
     {
       "player_id": "Anastassi Xenos",
@@ -349,7 +340,7 @@
       "mtd_plw": 0,
       "base_plw": 0,
       "cumulative_plw": 0,
-      "uscf_rating": 323,
+      "uscf_rating": 312,
       "ck_rating": 1934,
       "grade": "0K"
     },
@@ -394,9 +385,18 @@
       "mtd_plw": 0,
       "base_plw": 0,
       "cumulative_plw": 0,
-      "uscf_rating": 430,
+      "uscf_rating": 518,
       "ck_rating": 1473,
       "grade": "1st"
+    },
+    {
+      "player_id": "Rami Padukone-Mitter",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 1167,
+      "ck_rating": 1865,
+      "grade": "3rd"
     },
     {
       "player_id": "Sloane Murphy",
