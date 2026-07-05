@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-04T08:28:14.998705Z",
-  "total_team_plw": 1014,
+  "generated_at": "2026-07-05T08:44:52.709278Z",
+  "total_team_plw": 962,
   "players": [
     {
       "player_id": "Drew Murphy",
-      "mtd_plw": 300,
+      "mtd_plw": 306,
       "base_plw": 0,
-      "cumulative_plw": 300,
+      "cumulative_plw": 306,
       "uscf_rating": 928,
-      "ck_rating": 1752,
+      "ck_rating": 1835,
       "grade": "3rd"
     },
     {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 144,
+      "mtd_plw": 166,
       "base_plw": 0,
-      "cumulative_plw": 144,
-      "uscf_rating": 1033,
-      "ck_rating": 1929,
+      "cumulative_plw": 166,
+      "uscf_rating": 1060,
+      "ck_rating": 1967,
       "grade": "1st"
     },
     {
@@ -39,21 +39,12 @@
       "grade": "2nd"
     },
     {
-      "player_id": "LILIAH FETTNER",
-      "mtd_plw": 91,
-      "base_plw": 0,
-      "cumulative_plw": 91,
-      "uscf_rating": 606,
-      "ck_rating": 1439,
-      "grade": "2nd"
-    },
-    {
       "player_id": "Chloe Yip",
-      "mtd_plw": 63,
+      "mtd_plw": 66,
       "base_plw": 0,
-      "cumulative_plw": 63,
+      "cumulative_plw": 66,
       "uscf_rating": 973,
-      "ck_rating": 1909,
+      "ck_rating": 1884,
       "grade": "3rd"
     },
     {
@@ -89,7 +80,7 @@
       "base_plw": 0,
       "cumulative_plw": 18,
       "uscf_rating": 1049,
-      "ck_rating": 1882,
+      "ck_rating": 1870,
       "grade": "3rd"
     },
     {
@@ -103,12 +94,21 @@
     },
     {
       "player_id": "Dylan Wu",
-      "mtd_plw": 16,
+      "mtd_plw": 14,
       "base_plw": 0,
-      "cumulative_plw": 16,
+      "cumulative_plw": 14,
       "uscf_rating": 589,
       "ck_rating": 1459,
       "grade": "0K"
+    },
+    {
+      "player_id": "LILIAH FETTNER",
+      "mtd_plw": 10,
+      "base_plw": 0,
+      "cumulative_plw": 10,
+      "uscf_rating": 606,
+      "ck_rating": 1439,
+      "grade": "2nd"
     },
     {
       "player_id": "Sammy Fialkovskiy",
@@ -124,7 +124,7 @@
       "mtd_plw": 6,
       "base_plw": 0,
       "cumulative_plw": 6,
-      "uscf_rating": 445,
+      "uscf_rating": 398,
       "ck_rating": 1156,
       "grade": "0K"
     },
@@ -439,7 +439,7 @@
       "mtd_plw": 0,
       "base_plw": 0,
       "cumulative_plw": 0,
-      "uscf_rating": 1331,
+      "uscf_rating": 1288,
       "ck_rating": 1949,
       "grade": "5th"
     },
