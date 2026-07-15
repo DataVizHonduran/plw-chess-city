@@ -1,51 +1,60 @@
 {
-  "generated_at": "2026-07-14T07:51:48.078950Z",
-  "total_team_plw": 1285,
+  "generated_at": "2026-07-15T07:55:33.298507Z",
+  "total_team_plw": 1037,
   "players": [
-    {
-      "player_id": "Anastassi Xenos",
-      "mtd_plw": 290,
-      "base_plw": 0,
-      "cumulative_plw": 290,
-      "uscf_rating": 819,
-      "ck_rating": 1720,
-      "grade": "2nd"
-    },
     {
       "player_id": "LILIAH FETTNER",
       "mtd_plw": 183,
       "base_plw": 0,
       "cumulative_plw": 183,
-      "uscf_rating": 579,
+      "uscf_rating": 687,
       "ck_rating": 1540,
       "grade": "2nd"
     },
     {
-      "player_id": "Isha Varma",
+      "player_id": "Wyatt Lawson",
       "mtd_plw": 162,
       "base_plw": 0,
       "cumulative_plw": 162,
+      "uscf_rating": 957,
+      "ck_rating": 1966,
+      "grade": "1st"
+    },
+    {
+      "player_id": "Isha Varma",
+      "mtd_plw": 111,
+      "base_plw": 0,
+      "cumulative_plw": 111,
       "uscf_rating": 1291,
       "ck_rating": 2150,
       "grade": "5th"
     },
     {
-      "player_id": "Wyatt Lawson",
-      "mtd_plw": 138,
+      "player_id": "Chloe Yip",
+      "mtd_plw": 98,
       "base_plw": 0,
-      "cumulative_plw": 138,
-      "uscf_rating": 957,
-      "ck_rating": 1996,
-      "grade": "1st"
+      "cumulative_plw": 98,
+      "uscf_rating": 1016,
+      "ck_rating": 1890,
+      "grade": "3rd"
     },
     {
-      "player_id": "Chloe Yip",
-      "mtd_plw": 104,
+      "player_id": "Anastassi Xenos",
+      "mtd_plw": 74,
       "base_plw": 0,
-      "cumulative_plw": 104,
-      "uscf_rating": 1016,
-      "ck_rating": 1883,
-      "grade": "3rd"
+      "cumulative_plw": 74,
+      "uscf_rating": 819,
+      "ck_rating": 1720,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Theodore Meng",
+      "mtd_plw": 70,
+      "base_plw": 0,
+      "cumulative_plw": 70,
+      "uscf_rating": 1340,
+      "ck_rating": 2161,
+      "grade": "4th"
     },
     {
       "player_id": "Drew Murphy",
@@ -75,13 +84,13 @@
       "grade": "0K"
     },
     {
-      "player_id": "Theodore Meng",
-      "mtd_plw": 40,
+      "player_id": "Dylan Wu",
+      "mtd_plw": 39,
       "base_plw": 0,
-      "cumulative_plw": 40,
-      "uscf_rating": 1340,
-      "ck_rating": 2121,
-      "grade": "4th"
+      "cumulative_plw": 39,
+      "uscf_rating": 611,
+      "ck_rating": 1494,
+      "grade": "0K"
     },
     {
       "player_id": "Sammy Fialkovskiy",
@@ -100,24 +109,6 @@
       "uscf_rating": 546,
       "ck_rating": 1365,
       "grade": "2nd"
-    },
-    {
-      "player_id": "Dylan Wu",
-      "mtd_plw": 33,
-      "base_plw": 0,
-      "cumulative_plw": 33,
-      "uscf_rating": 611,
-      "ck_rating": 1458,
-      "grade": "0K"
-    },
-    {
-      "player_id": "Yoomi Yoon-Winawer",
-      "mtd_plw": 22,
-      "base_plw": 0,
-      "cumulative_plw": 22,
-      "uscf_rating": 333,
-      "ck_rating": 1341,
-      "grade": "0K"
     },
     {
       "player_id": "PARKER DOWNING",
@@ -147,15 +138,6 @@
       "grade": "3rd"
     },
     {
-      "player_id": "Rafael Boquin",
-      "mtd_plw": 10,
-      "base_plw": 0,
-      "cumulative_plw": 10,
-      "uscf_rating": 518,
-      "ck_rating": 1529,
-      "grade": "1st"
-    },
-    {
       "player_id": "Glenn Gooch-Raushenbush",
       "mtd_plw": 10,
       "base_plw": 0,
@@ -166,9 +148,9 @@
     },
     {
       "player_id": "Brian Silverman",
-      "mtd_plw": 6,
+      "mtd_plw": 3,
       "base_plw": 0,
-      "cumulative_plw": 6,
+      "cumulative_plw": 3,
       "uscf_rating": 1045,
       "ck_rating": 1807,
       "grade": "2nd"
@@ -408,6 +390,15 @@
       "grade": "4th"
     },
     {
+      "player_id": "Rafael Boquin",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 518,
+      "ck_rating": 1529,
+      "grade": "1st"
+    },
+    {
       "player_id": "Sloane Murphy",
       "mtd_plw": 0,
       "base_plw": 0,
@@ -442,6 +433,15 @@
       "uscf_rating": 430,
       "ck_rating": 1702,
       "grade": "2nd"
+    },
+    {
+      "player_id": "Yoomi Yoon-Winawer",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 333,
+      "ck_rating": 1341,
+      "grade": "0K"
     },
     {
       "player_id": "Tim Kozub",
