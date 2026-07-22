@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-21T08:14:04.325905Z",
-  "total_team_plw": 1596,
+  "generated_at": "2026-07-22T08:14:33.295317Z",
+  "total_team_plw": 1750,
   "players": [
     {
       "player_id": "Anastassi Xenos",
-      "mtd_plw": 478,
+      "mtd_plw": 661,
       "base_plw": 0,
-      "cumulative_plw": 478,
+      "cumulative_plw": 661,
       "uscf_rating": 793,
-      "ck_rating": 1579,
+      "ck_rating": 1776,
       "grade": "2nd"
     },
     {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 304,
+      "mtd_plw": 298,
       "base_plw": 0,
-      "cumulative_plw": 304,
+      "cumulative_plw": 298,
       "uscf_rating": 1055,
-      "ck_rating": 2024,
+      "ck_rating": 2056,
       "grade": "1st"
     },
     {
@@ -48,15 +48,6 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Theodore Meng",
-      "mtd_plw": 80,
-      "base_plw": 0,
-      "cumulative_plw": 80,
-      "uscf_rating": 1340,
-      "ck_rating": 2207,
-      "grade": "4th"
-    },
-    {
       "player_id": "Adam Atwa",
       "mtd_plw": 73,
       "base_plw": 0,
@@ -64,6 +55,15 @@
       "uscf_rating": 854,
       "ck_rating": 1618,
       "grade": "1st"
+    },
+    {
+      "player_id": "Theodore Meng",
+      "mtd_plw": 63,
+      "base_plw": 0,
+      "cumulative_plw": 63,
+      "uscf_rating": 1340,
+      "ck_rating": 2212,
+      "grade": "4th"
     },
     {
       "player_id": "Dylan Yip",
@@ -89,7 +89,7 @@
       "base_plw": 0,
       "cumulative_plw": 28,
       "uscf_rating": 1205,
-      "ck_rating": 1936,
+      "ck_rating": 1947,
       "grade": "3rd"
     },
     {
@@ -102,15 +102,6 @@
       "grade": "3rd"
     },
     {
-      "player_id": "Dylan Wu",
-      "mtd_plw": 20,
-      "base_plw": 0,
-      "cumulative_plw": 20,
-      "uscf_rating": 598,
-      "ck_rating": 1494,
-      "grade": "0K"
-    },
-    {
       "player_id": "Ethan Metzer",
       "mtd_plw": 15,
       "base_plw": 0,
@@ -118,6 +109,15 @@
       "uscf_rating": 1213,
       "ck_rating": 1875,
       "grade": "3rd"
+    },
+    {
+      "player_id": "Dylan Wu",
+      "mtd_plw": 14,
+      "base_plw": 0,
+      "cumulative_plw": 14,
+      "uscf_rating": 598,
+      "ck_rating": 1494,
+      "grade": "0K"
     },
     {
       "player_id": "Rami Padukone-Mitter",
