@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-07-24T08:13:46.226760Z",
-  "total_team_plw": 1502,
+  "generated_at": "2026-07-25T07:56:10.931714Z",
+  "total_team_plw": 1437,
   "players": [
     {
       "player_id": "Anastassi Xenos",
-      "mtd_plw": 540,
+      "mtd_plw": 513,
       "base_plw": 0,
-      "cumulative_plw": 540,
+      "cumulative_plw": 513,
       "uscf_rating": 793,
-      "ck_rating": 1776,
+      "ck_rating": 1765,
       "grade": "2nd"
     },
     {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 315,
+      "mtd_plw": 306,
       "base_plw": 0,
-      "cumulative_plw": 315,
+      "cumulative_plw": 306,
       "uscf_rating": 1055,
-      "ck_rating": 2064,
+      "ck_rating": 2017,
       "grade": "1st"
     },
     {
       "player_id": "LILIAH FETTNER",
-      "mtd_plw": 283,
+      "mtd_plw": 302,
       "base_plw": 0,
-      "cumulative_plw": 283,
+      "cumulative_plw": 302,
       "uscf_rating": 701,
-      "ck_rating": 1606,
+      "ck_rating": 1577,
       "grade": "2nd"
     },
     {
       "player_id": "Adam Atwa",
-      "mtd_plw": 73,
+      "mtd_plw": 58,
       "base_plw": 0,
-      "cumulative_plw": 73,
+      "cumulative_plw": 58,
       "uscf_rating": 854,
       "ck_rating": 1618,
       "grade": "1st"
     },
     {
       "player_id": "Theodore Meng",
-      "mtd_plw": 38,
+      "mtd_plw": 41,
       "base_plw": 0,
-      "cumulative_plw": 38,
+      "cumulative_plw": 41,
       "uscf_rating": 1340,
-      "ck_rating": 2212,
+      "ck_rating": 2224,
       "grade": "4th"
     },
     {
@@ -66,15 +66,6 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Isha Varma",
-      "mtd_plw": 30,
-      "base_plw": 0,
-      "cumulative_plw": 30,
-      "uscf_rating": 1291,
-      "ck_rating": 2220,
-      "grade": "5th"
-    },
-    {
       "player_id": "Dylan Wu",
       "mtd_plw": 29,
       "base_plw": 0,
@@ -84,12 +75,21 @@
       "grade": "0K"
     },
     {
+      "player_id": "Ethan Metzer",
+      "mtd_plw": 22,
+      "base_plw": 0,
+      "cumulative_plw": 22,
+      "uscf_rating": 1213,
+      "ck_rating": 1857,
+      "grade": "3rd"
+    },
+    {
       "player_id": "Chloe Yip",
       "mtd_plw": 21,
       "base_plw": 0,
       "cumulative_plw": 21,
       "uscf_rating": 1205,
-      "ck_rating": 1870,
+      "ck_rating": 1843,
       "grade": "3rd"
     },
     {
@@ -102,24 +102,6 @@
       "grade": "3rd"
     },
     {
-      "player_id": "Dylan Yip",
-      "mtd_plw": 20,
-      "base_plw": 0,
-      "cumulative_plw": 20,
-      "uscf_rating": 285,
-      "ck_rating": 1294,
-      "grade": "0K"
-    },
-    {
-      "player_id": "Ethan Metzer",
-      "mtd_plw": 15,
-      "base_plw": 0,
-      "cumulative_plw": 15,
-      "uscf_rating": 1213,
-      "ck_rating": 1875,
-      "grade": "3rd"
-    },
-    {
       "player_id": "Jaxson Vanderpoole",
       "mtd_plw": 15,
       "base_plw": 0,
@@ -127,6 +109,15 @@
       "uscf_rating": 1064,
       "ck_rating": 1881,
       "grade": "2nd"
+    },
+    {
+      "player_id": "Dylan Yip",
+      "mtd_plw": 12,
+      "base_plw": 0,
+      "cumulative_plw": 12,
+      "uscf_rating": 285,
+      "ck_rating": 1294,
+      "grade": "0K"
     },
     {
       "player_id": "Jacob Saleh",
@@ -138,15 +129,6 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Rami Padukone-Mitter",
-      "mtd_plw": 9,
-      "base_plw": 0,
-      "cumulative_plw": 9,
-      "uscf_rating": 1167,
-      "ck_rating": 1791,
-      "grade": "3rd"
-    },
-    {
       "player_id": "Myla Walavalkar",
       "mtd_plw": 8,
       "base_plw": 0,
@@ -156,12 +138,12 @@
       "grade": "1st"
     },
     {
-      "player_id": "Jeremy Chow",
-      "mtd_plw": 4,
+      "player_id": "Rami Padukone-Mitter",
+      "mtd_plw": 6,
       "base_plw": 0,
-      "cumulative_plw": 4,
-      "uscf_rating": 450,
-      "ck_rating": 1553,
+      "cumulative_plw": 6,
+      "uscf_rating": 1139,
+      "ck_rating": 1791,
       "grade": "3rd"
     },
     {
@@ -172,6 +154,15 @@
       "uscf_rating": 430,
       "ck_rating": 1673,
       "grade": "2nd"
+    },
+    {
+      "player_id": "Jeremy Chow",
+      "mtd_plw": 2,
+      "base_plw": 0,
+      "cumulative_plw": 2,
+      "uscf_rating": 450,
+      "ck_rating": 1553,
+      "grade": "3rd"
     },
     {
       "player_id": "Abby Noy",
@@ -270,6 +261,15 @@
       "cumulative_plw": 0,
       "uscf_rating": 1084,
       "ck_rating": 1866,
+      "grade": "5th"
+    },
+    {
+      "player_id": "Isha Varma",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 1291,
+      "ck_rating": 2220,
       "grade": "5th"
     },
     {
