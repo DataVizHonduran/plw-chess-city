@@ -1,69 +1,78 @@
 {
-  "generated_at": "2026-07-26T08:13:42.784344Z",
-  "total_team_plw": 1296,
+  "generated_at": "2026-07-27T09:38:00.364129Z",
+  "total_team_plw": 1225,
   "players": [
     {
       "player_id": "Anastassi Xenos",
-      "mtd_plw": 501,
+      "mtd_plw": 368,
       "base_plw": 0,
-      "cumulative_plw": 501,
+      "cumulative_plw": 368,
       "uscf_rating": 793,
       "ck_rating": 1765,
       "grade": "2nd"
     },
     {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 285,
+      "mtd_plw": 294,
       "base_plw": 0,
-      "cumulative_plw": 285,
+      "cumulative_plw": 294,
       "uscf_rating": 1055,
-      "ck_rating": 2000,
+      "ck_rating": 2010,
       "grade": "1st"
     },
     {
       "player_id": "LILIAH FETTNER",
-      "mtd_plw": 221,
+      "mtd_plw": 224,
       "base_plw": 0,
-      "cumulative_plw": 221,
+      "cumulative_plw": 224,
       "uscf_rating": 701,
-      "ck_rating": 1595,
+      "ck_rating": 1642,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Chase grant",
+      "mtd_plw": 60,
+      "base_plw": 0,
+      "cumulative_plw": 60,
+      "uscf_rating": 546,
+      "ck_rating": 1451,
       "grade": "2nd"
     },
     {
       "player_id": "Jaxson Vanderpoole",
-      "mtd_plw": 42,
+      "mtd_plw": 51,
       "base_plw": 0,
-      "cumulative_plw": 42,
+      "cumulative_plw": 51,
       "uscf_rating": 1064,
-      "ck_rating": 1815,
+      "ck_rating": 1784,
       "grade": "2nd"
     },
     {
-      "player_id": "Theodore Meng",
-      "mtd_plw": 41,
+      "player_id": "Chloe Yip",
+      "mtd_plw": 43,
       "base_plw": 0,
-      "cumulative_plw": 41,
-      "uscf_rating": 1340,
-      "ck_rating": 2224,
-      "grade": "4th"
-    },
-    {
-      "player_id": "Ethan Metzer",
-      "mtd_plw": 40,
-      "base_plw": 0,
-      "cumulative_plw": 40,
-      "uscf_rating": 1162,
-      "ck_rating": 1931,
+      "cumulative_plw": 43,
+      "uscf_rating": 1205,
+      "ck_rating": 1827,
       "grade": "3rd"
     },
     {
-      "player_id": "Dylan Wu",
-      "mtd_plw": 29,
+      "player_id": "Ethan Metzer",
+      "mtd_plw": 34,
       "base_plw": 0,
-      "cumulative_plw": 29,
-      "uscf_rating": 598,
-      "ck_rating": 1494,
-      "grade": "0K"
+      "cumulative_plw": 34,
+      "uscf_rating": 1162,
+      "ck_rating": 1919,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Theodore Meng",
+      "mtd_plw": 31,
+      "base_plw": 0,
+      "cumulative_plw": 31,
+      "uscf_rating": 1340,
+      "ck_rating": 2224,
+      "grade": "4th"
     },
     {
       "player_id": "PARKER DOWNING",
@@ -75,13 +84,13 @@
       "grade": "0K"
     },
     {
-      "player_id": "Chloe Yip",
-      "mtd_plw": 24,
+      "player_id": "Dylan Wu",
+      "mtd_plw": 25,
       "base_plw": 0,
-      "cumulative_plw": 24,
-      "uscf_rating": 1205,
-      "ck_rating": 1841,
-      "grade": "3rd"
+      "cumulative_plw": 25,
+      "uscf_rating": 616,
+      "ck_rating": 1494,
+      "grade": "0K"
     },
     {
       "player_id": "Drew Murphy",
@@ -100,15 +109,6 @@
       "uscf_rating": 450,
       "ck_rating": 1508,
       "grade": "3rd"
-    },
-    {
-      "player_id": "Chase grant",
-      "mtd_plw": 12,
-      "base_plw": 0,
-      "cumulative_plw": 12,
-      "uscf_rating": 546,
-      "ck_rating": 1432,
-      "grade": "2nd"
     },
     {
       "player_id": "Jacob Saleh",
@@ -145,15 +145,6 @@
       "uscf_rating": 854,
       "ck_rating": 1616,
       "grade": "1st"
-    },
-    {
-      "player_id": "Rami Padukone-Mitter",
-      "mtd_plw": 6,
-      "base_plw": 0,
-      "cumulative_plw": 6,
-      "uscf_rating": 1212,
-      "ck_rating": 1791,
-      "grade": "3rd"
     },
     {
       "player_id": "Abby Noy",
@@ -388,6 +379,15 @@
       "uscf_rating": 432,
       "ck_rating": 1529,
       "grade": "1st"
+    },
+    {
+      "player_id": "Rami Padukone-Mitter",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 1212,
+      "ck_rating": 1791,
+      "grade": "3rd"
     },
     {
       "player_id": "Sammy Fialkovskiy",
