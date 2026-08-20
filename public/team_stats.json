@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-19T06:32:08.271778Z",
-  "total_team_plw": 868,
+  "generated_at": "2026-08-20T06:34:22.783309Z",
+  "total_team_plw": 981,
   "players": [
+    {
+      "player_id": "Chloe Yip",
+      "mtd_plw": 191,
+      "base_plw": 0,
+      "cumulative_plw": 191,
+      "uscf_rating": 1205,
+      "ck_rating": 1871,
+      "grade": "3rd"
+    },
     {
       "player_id": "Anastassi Xenos",
       "mtd_plw": 189,
       "base_plw": 0,
       "cumulative_plw": 189,
       "uscf_rating": 879,
-      "ck_rating": 1780,
+      "ck_rating": 1769,
       "grade": "2nd"
     },
     {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 153,
+      "mtd_plw": 135,
       "base_plw": 0,
-      "cumulative_plw": 153,
+      "cumulative_plw": 135,
       "uscf_rating": 1097,
       "ck_rating": 2031,
       "grade": "1st"
-    },
-    {
-      "player_id": "Chloe Yip",
-      "mtd_plw": 138,
-      "base_plw": 0,
-      "cumulative_plw": 138,
-      "uscf_rating": 1205,
-      "ck_rating": 1900,
-      "grade": "3rd"
     },
     {
       "player_id": "Kai Tang",
@@ -39,13 +39,13 @@
       "grade": "0K"
     },
     {
-      "player_id": "Drew Murphy",
-      "mtd_plw": 63,
+      "player_id": "Adam Atwa",
+      "mtd_plw": 64,
       "base_plw": 0,
-      "cumulative_plw": 63,
-      "uscf_rating": 1024,
-      "ck_rating": 1830,
-      "grade": "3rd"
+      "cumulative_plw": 64,
+      "uscf_rating": 835,
+      "ck_rating": 1578,
+      "grade": "1st"
     },
     {
       "player_id": "Theodore Lewis",
@@ -54,6 +54,15 @@
       "cumulative_plw": 61,
       "uscf_rating": 1283,
       "ck_rating": 2213,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Andrew Li",
+      "mtd_plw": 54,
+      "base_plw": 0,
+      "cumulative_plw": 54,
+      "uscf_rating": 1300,
+      "ck_rating": 1913,
       "grade": "3rd"
     },
     {
@@ -66,6 +75,15 @@
       "grade": "2nd"
     },
     {
+      "player_id": "Drew Murphy",
+      "mtd_plw": 45,
+      "base_plw": 0,
+      "cumulative_plw": 45,
+      "uscf_rating": 1024,
+      "ck_rating": 1830,
+      "grade": "3rd"
+    },
+    {
       "player_id": "Dylen Duke",
       "mtd_plw": 42,
       "base_plw": 0,
@@ -75,22 +93,22 @@
       "grade": "1st"
     },
     {
-      "player_id": "LILIAH FETTNER",
-      "mtd_plw": 33,
+      "player_id": "Dylan Wu",
+      "mtd_plw": 31,
       "base_plw": 0,
-      "cumulative_plw": 33,
-      "uscf_rating": 696,
-      "ck_rating": 1659,
-      "grade": "2nd"
+      "cumulative_plw": 31,
+      "uscf_rating": 589,
+      "ck_rating": 1466,
+      "grade": "0K"
     },
     {
-      "player_id": "Dylan Wu",
-      "mtd_plw": 25,
+      "player_id": "Jaxson Vanderpoole",
+      "mtd_plw": 24,
       "base_plw": 0,
-      "cumulative_plw": 25,
-      "uscf_rating": 589,
-      "ck_rating": 1473,
-      "grade": "0K"
+      "cumulative_plw": 24,
+      "uscf_rating": 1064,
+      "ck_rating": 1800,
+      "grade": "2nd"
     },
     {
       "player_id": "Ethan Metzer",
@@ -100,24 +118,6 @@
       "uscf_rating": 1191,
       "ck_rating": 1769,
       "grade": "3rd"
-    },
-    {
-      "player_id": "Adam Atwa",
-      "mtd_plw": 13,
-      "base_plw": 0,
-      "cumulative_plw": 13,
-      "uscf_rating": 835,
-      "ck_rating": 1602,
-      "grade": "1st"
-    },
-    {
-      "player_id": "PARKER DOWNING",
-      "mtd_plw": 6,
-      "base_plw": 0,
-      "cumulative_plw": 6,
-      "uscf_rating": 626,
-      "ck_rating": 1445,
-      "grade": "0K"
     },
     {
       "player_id": "Caroline Jeffreys",
@@ -228,12 +228,12 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Jaxson Vanderpoole",
+      "player_id": "LILIAH FETTNER",
       "mtd_plw": 0,
       "base_plw": 0,
       "cumulative_plw": 0,
-      "uscf_rating": 1064,
-      "ck_rating": 1807,
+      "uscf_rating": 696,
+      "ck_rating": 1659,
       "grade": "2nd"
     },
     {
@@ -252,15 +252,6 @@
       "cumulative_plw": 0,
       "uscf_rating": 729,
       "ck_rating": 100,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Andrew Li",
-      "mtd_plw": 0,
-      "base_plw": 0,
-      "cumulative_plw": 0,
-      "uscf_rating": 1300,
-      "ck_rating": 1830,
       "grade": "3rd"
     },
     {
@@ -450,6 +441,15 @@
       "cumulative_plw": 0,
       "uscf_rating": 235,
       "ck_rating": 1934,
+      "grade": "0K"
+    },
+    {
+      "player_id": "PARKER DOWNING",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 626,
+      "ck_rating": 1445,
       "grade": "0K"
     },
     {
