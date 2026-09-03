@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T10:22:34.439256Z",
-  "total_team_plw": 697,
+  "generated_at": "2026-09-03T10:31:00.660079Z",
+  "total_team_plw": 752,
   "players": [
     {
       "player_id": "Sammy Fialkovskiy",
@@ -12,31 +12,49 @@
       "grade": "4th"
     },
     {
-      "player_id": "Kai Tang",
-      "mtd_plw": 116,
-      "base_plw": 0,
-      "cumulative_plw": 116,
-      "uscf_rating": 680,
-      "ck_rating": 1799,
-      "grade": "0K"
-    },
-    {
       "player_id": "Wyatt Lawson",
-      "mtd_plw": 114,
+      "mtd_plw": 123,
       "base_plw": 0,
-      "cumulative_plw": 114,
+      "cumulative_plw": 123,
       "uscf_rating": 1117,
-      "ck_rating": 2005,
+      "ck_rating": 2035,
       "grade": "1st"
     },
     {
-      "player_id": "Ethan Metzer",
-      "mtd_plw": 105,
+      "player_id": "Kai Tang",
+      "mtd_plw": 106,
       "base_plw": 0,
-      "cumulative_plw": 105,
+      "cumulative_plw": 106,
+      "uscf_rating": 680,
+      "ck_rating": 1814,
+      "grade": "0K"
+    },
+    {
+      "player_id": "Ethan Metzer",
+      "mtd_plw": 99,
+      "base_plw": 0,
+      "cumulative_plw": 99,
       "uscf_rating": 1218,
       "ck_rating": 1756,
       "grade": "3rd"
+    },
+    {
+      "player_id": "Chloe Yip",
+      "mtd_plw": 62,
+      "base_plw": 0,
+      "cumulative_plw": 62,
+      "uscf_rating": 1205,
+      "ck_rating": 1850,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Dylan Wu",
+      "mtd_plw": 40,
+      "base_plw": 0,
+      "cumulative_plw": 40,
+      "uscf_rating": 760,
+      "ck_rating": 1472,
+      "grade": "0K"
     },
     {
       "player_id": "Rami Padukone-Mitter",
@@ -54,6 +72,15 @@
       "cumulative_plw": 37,
       "uscf_rating": 879,
       "ck_rating": 1723,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Glenn Gooch-Raushenbush",
+      "mtd_plw": 36,
+      "base_plw": 0,
+      "cumulative_plw": 36,
+      "uscf_rating": 1094,
+      "ck_rating": 1879,
       "grade": "2nd"
     },
     {
@@ -75,15 +102,6 @@
       "grade": "1st"
     },
     {
-      "player_id": "Chloe Yip",
-      "mtd_plw": 23,
-      "base_plw": 0,
-      "cumulative_plw": 23,
-      "uscf_rating": 1205,
-      "ck_rating": 1851,
-      "grade": "3rd"
-    },
-    {
       "player_id": "Abby Noy",
       "mtd_plw": 22,
       "base_plw": 0,
@@ -91,33 +109,6 @@
       "uscf_rating": 695,
       "ck_rating": 1652,
       "grade": "5th"
-    },
-    {
-      "player_id": "Dylan Yip",
-      "mtd_plw": 22,
-      "base_plw": 0,
-      "cumulative_plw": 22,
-      "uscf_rating": 285,
-      "ck_rating": 1247,
-      "grade": "0K"
-    },
-    {
-      "player_id": "Dylan Wu",
-      "mtd_plw": 16,
-      "base_plw": 0,
-      "cumulative_plw": 16,
-      "uscf_rating": 760,
-      "ck_rating": 1499,
-      "grade": "0K"
-    },
-    {
-      "player_id": "Andrew Li",
-      "mtd_plw": 15,
-      "base_plw": 0,
-      "cumulative_plw": 15,
-      "uscf_rating": 1311,
-      "ck_rating": 1876,
-      "grade": "3rd"
     },
     {
       "player_id": "Jaxson Vanderpoole",
@@ -264,15 +255,6 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Glenn Gooch-Raushenbush",
-      "mtd_plw": 0,
-      "base_plw": 0,
-      "cumulative_plw": 0,
-      "uscf_rating": 1094,
-      "ck_rating": 1891,
-      "grade": "2nd"
-    },
-    {
       "player_id": "Jacob Saleh",
       "mtd_plw": 0,
       "base_plw": 0,
@@ -324,6 +306,15 @@
       "cumulative_plw": 0,
       "uscf_rating": 729,
       "ck_rating": 100,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Andrew Li",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 1311,
+      "ck_rating": 1876,
       "grade": "3rd"
     },
     {
@@ -496,6 +487,15 @@
       "uscf_rating": 294,
       "ck_rating": 981,
       "grade": "5th"
+    },
+    {
+      "player_id": "Dylan Yip",
+      "mtd_plw": 0,
+      "base_plw": 0,
+      "cumulative_plw": 0,
+      "uscf_rating": 285,
+      "ck_rating": 1247,
+      "grade": "0K"
     },
     {
       "player_id": "Lyra Mattis",
