@@ -1,33 +1,51 @@
 {
-  "generated_at": "2026-10-01T12:13:15.511342Z",
-  "total_team_plw": 1319,
+  "generated_at": "2026-10-02T11:42:36.051422Z",
+  "total_team_plw": 1953,
   "players": [
     {
-      "player_id": "Wyatt Lawson",
-      "mtd_plw": 208,
-      "base_plw": 0,
-      "cumulative_plw": 208,
-      "uscf_rating": 1161,
-      "ck_rating": 2101,
-      "grade": "2nd"
-    },
-    {
       "player_id": "Arin Dhami",
-      "mtd_plw": 188,
+      "mtd_plw": 254,
       "base_plw": 0,
-      "cumulative_plw": 188,
+      "cumulative_plw": 254,
       "uscf_rating": 325,
-      "ck_rating": 1519,
+      "ck_rating": 1506,
       "grade": "1st"
     },
     {
-      "player_id": "Anastassi xenos",
-      "mtd_plw": 154,
+      "player_id": "Wyatt Lawson",
+      "mtd_plw": 232,
       "base_plw": 0,
-      "cumulative_plw": 154,
+      "cumulative_plw": 232,
+      "uscf_rating": 1161,
+      "ck_rating": 2100,
+      "grade": "2nd"
+    },
+    {
+      "player_id": "Anastassi xenos",
+      "mtd_plw": 220,
+      "base_plw": 0,
+      "cumulative_plw": 220,
       "uscf_rating": 879,
-      "ck_rating": 1834,
+      "ck_rating": 1841,
       "grade": "3rd"
+    },
+    {
+      "player_id": "Jayden Duke",
+      "mtd_plw": 186,
+      "base_plw": 0,
+      "cumulative_plw": 186,
+      "uscf_rating": 453,
+      "ck_rating": 1528,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Reznor Kaczmarek",
+      "mtd_plw": 130,
+      "base_plw": 0,
+      "cumulative_plw": 130,
+      "uscf_rating": 125,
+      "ck_rating": 1240,
+      "grade": "4th"
     },
     {
       "player_id": "Julian Berger",
@@ -53,26 +71,62 @@
       "base_plw": 0,
       "cumulative_plw": 114,
       "uscf_rating": 1263,
-      "ck_rating": 2189,
+      "ck_rating": 2173,
       "grade": "4th"
     },
     {
-      "player_id": "Reznor Kaczmarek",
+      "player_id": "Sammy Fialkovskiy",
+      "mtd_plw": 95,
+      "base_plw": 0,
+      "cumulative_plw": 95,
+      "uscf_rating": 1102,
+      "ck_rating": 1955,
+      "grade": "5th"
+    },
+    {
+      "player_id": "Dylen Duke",
       "mtd_plw": 84,
       "base_plw": 0,
       "cumulative_plw": 84,
-      "uscf_rating": 125,
-      "ck_rating": 1240,
-      "grade": "4th"
+      "uscf_rating": 376,
+      "ck_rating": 1317,
+      "grade": "2nd"
     },
     {
       "player_id": "Kai Tang",
-      "mtd_plw": 62,
+      "mtd_plw": 68,
       "base_plw": 0,
-      "cumulative_plw": 62,
+      "cumulative_plw": 68,
       "uscf_rating": 680,
-      "ck_rating": 1872,
+      "ck_rating": 1829,
       "grade": "1st"
+    },
+    {
+      "player_id": "Rami Padukone-Mitter",
+      "mtd_plw": 54,
+      "base_plw": 0,
+      "cumulative_plw": 54,
+      "uscf_rating": 1279,
+      "ck_rating": 1802,
+      "grade": "4th"
+    },
+    {
+      "player_id": "Jacob Saleh",
+      "mtd_plw": 52,
+      "base_plw": 0,
+      "cumulative_plw": 52,
+      "uscf_rating": 280,
+      "ck_rating": 1220,
+      "grade": "3rd"
+    },
+    {
+      "player_id": "Jaxson Vanderpoole",
+      "mtd_plw": 45,
+      "base_plw": 0,
+      "cumulative_plw": 45,
+      "uscf_rating": 934,
+      "ck_rating": 1802,
+      "grade": "3rd"
     },
     {
       "player_id": "Chloe Yip",
@@ -90,15 +144,6 @@
       "cumulative_plw": 40,
       "uscf_rating": 1033,
       "ck_rating": 1807,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Jayden Duke",
-      "mtd_plw": 32,
-      "base_plw": 0,
-      "cumulative_plw": 32,
-      "uscf_rating": 453,
-      "ck_rating": 1445,
       "grade": "3rd"
     },
     {
@@ -120,39 +165,12 @@
       "grade": "1st"
     },
     {
-      "player_id": "Rami Padukone-Mitter",
-      "mtd_plw": 24,
-      "base_plw": 0,
-      "cumulative_plw": 24,
-      "uscf_rating": 1279,
-      "ck_rating": 1717,
-      "grade": "4th"
-    },
-    {
-      "player_id": "Jaxson Vanderpoole",
-      "mtd_plw": 15,
-      "base_plw": 0,
-      "cumulative_plw": 15,
-      "uscf_rating": 934,
-      "ck_rating": 1851,
-      "grade": "3rd"
-    },
-    {
-      "player_id": "Sammy Fialkovskiy",
-      "mtd_plw": 15,
-      "base_plw": 0,
-      "cumulative_plw": 15,
-      "uscf_rating": 1102,
-      "ck_rating": 1956,
-      "grade": "5th"
-    },
-    {
       "player_id": "Benjamin Burke",
-      "mtd_plw": 14,
+      "mtd_plw": 16,
       "base_plw": 0,
-      "cumulative_plw": 14,
+      "cumulative_plw": 16,
       "uscf_rating": 136,
-      "ck_rating": 1239,
+      "ck_rating": 1246,
       "grade": "2nd"
     },
     {
@@ -165,15 +183,6 @@
       "grade": "2nd"
     },
     {
-      "player_id": "Jacob Saleh",
-      "mtd_plw": 10,
-      "base_plw": 0,
-      "cumulative_plw": 10,
-      "uscf_rating": 280,
-      "ck_rating": 1226,
-      "grade": "3rd"
-    },
-    {
       "player_id": "PARKER DOWNING",
       "mtd_plw": 10,
       "base_plw": 0,
@@ -181,6 +190,15 @@
       "uscf_rating": 579,
       "ck_rating": 1445,
       "grade": "1st"
+    },
+    {
+      "player_id": "Rafael Boquin",
+      "mtd_plw": 4,
+      "base_plw": 0,
+      "cumulative_plw": 4,
+      "uscf_rating": 458,
+      "ck_rating": 1566,
+      "grade": "2nd"
     },
     {
       "player_id": "Dylan Yip",
@@ -235,15 +253,6 @@
       "uscf_rating": 528,
       "ck_rating": 1450,
       "grade": "3rd"
-    },
-    {
-      "player_id": "Dylen Duke",
-      "mtd_plw": 0,
-      "base_plw": 0,
-      "cumulative_plw": 0,
-      "uscf_rating": 376,
-      "ck_rating": 1339,
-      "grade": "2nd"
     },
     {
       "player_id": "Elise LaBarbera",
@@ -333,15 +342,6 @@
       "cumulative_plw": 0,
       "uscf_rating": 444,
       "ck_rating": 1868,
-      "grade": "2nd"
-    },
-    {
-      "player_id": "Rafael Boquin",
-      "mtd_plw": 0,
-      "base_plw": 0,
-      "cumulative_plw": 0,
-      "uscf_rating": 458,
-      "ck_rating": 1541,
       "grade": "2nd"
     },
     {
