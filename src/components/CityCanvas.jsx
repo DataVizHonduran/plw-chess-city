@@ -39,7 +39,7 @@ export default function CityCanvas() {
     [snapshots, currentIndex, placements],
   );
 
-  // New buildings pop in with dust; a new face in the top 3 gets a burst at its tower
+  // New buildings pop in with dust; a new face on a leader tower gets a burst
   const prevTop3Ref = useRef([]);
   useEffect(() => {
     if (!city) return;
@@ -50,13 +50,13 @@ export default function CityCanvas() {
       anim.pop.set(`${lot.x},${lot.y}`, anim.frame);
       spawnDust(anim.particles, lot.x, lot.y);
     }
-    city.top3.forEach((p, rank) => {
+    city.leaders.forEach((p, rank) => {
       if (prevTop3Ref.current[rank] && prevTop3Ref.current[rank] !== p.player_id) {
         const t = TOWER_TILES[rank];
         for (let i = 0; i < 3; i++) spawnDust(anim.particles, t.x, t.y);
       }
     });
-    prevTop3Ref.current = city.top3.map(p => p.player_id);
+    prevTop3Ref.current = city.leaders.map(p => p.player_id);
   }, [city]);
 
   useEffect(() => { selectedRef.current = selected; }, [selected]);

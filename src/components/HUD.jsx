@@ -65,7 +65,7 @@ export default function HUD({ city, prevSnap, error, date, selected, onSelect })
         );
       })}
       <div style={{ color: '#667', fontSize: 10, marginTop: 8, fontStyle: 'italic' }}>
-        Every 250 pts = a new building. Top 3 own the towers. Click a name or building to find it.
+        Every 250 pts = a new building. Top 3 own the skyscrapers, 4–6 the mid-rises. Click a name or building to find it.
       </div>
     </div>
   );

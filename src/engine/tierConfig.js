@@ -55,13 +55,17 @@ export const GROUND = {
   xing:     'tile_road_xing_normal',
 };
 
-// Top-3 tower height in px: grows with score, not rank, so it rises over the season
-export function towerHeight(cum) {
-  return Math.min(400, 70 + cum / 18);
+// Tower height in px: grows with score, not rank, so it rises over the season.
+// Ranks 4-6 get a mid-rise, always shorter than the top 3.
+export function towerHeight(cum, rank) {
+  return rank < 3 ? Math.min(400, 70 + cum / 18) : Math.min(130, 40 + cum / 30);
 }
 
 export const MEDALS = [
   { body: '#2b3a55', accent: '#FFD700', label: '#1' },
   { body: '#2f3b4a', accent: '#D8DEE9', label: '#2' },
   { body: '#3a3330', accent: '#E0915A', label: '#3' },
+  { body: '#2d3d3f', accent: '#5FD3C6', label: '#4', small: true, tag: { dx: 150, dy: 10 } },
+  { body: '#2d3d3f', accent: '#5FD3C6', label: '#5', small: true, tag: { dx: -150, dy: 10 } },
+  { body: '#2d3d3f', accent: '#5FD3C6', label: '#6', small: true, tag: { dx: 0, dy: 95 } },
 ];

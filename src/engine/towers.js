@@ -39,6 +39,7 @@ export function drawBanner(ctx, cx, topY, player, medal) {
   const name = `${medal.label} ${fmtName(player.player_id)}`;
   const pts = `${Math.round(player.cumulative_plw).toLocaleString()} pts`;
   ctx.save();
+  if (medal.small) return _smallBanner(ctx, cx, topY, `${name} · ${pts}`, medal);
   ctx.font = 'bold 15px monospace';
   const w = Math.max(ctx.measureText(name).width, 80) + 20;
   const bh = 38;
@@ -66,6 +67,32 @@ export function drawBanner(ctx, cx, topY, player, medal) {
   ctx.font = '11px monospace';
   ctx.fillStyle = '#cfd6e6';
   ctx.fillText(pts, cx, y + 31);
+  ctx.restore();
+}
+
+// One-line tag for ranks 4-6 so the downtown doesn't drown in labels
+function _smallBanner(ctx, cx, topY, text, medal) {
+  ctx.font = 'bold 11px monospace';
+  const w = ctx.measureText(text).width + 12;
+  // Tag sits off to the side (medal.tag) with a leader line back to the roof
+  const lx = cx + medal.tag.dx, ly = topY + medal.tag.dy;
+  ctx.strokeStyle = medal.accent;
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(cx, topY);
+  ctx.lineTo(lx, ly);
+  ctx.stroke();
+  const x = lx - w / 2, y = ly - 9;
+  ctx.fillStyle = 'rgba(12,14,30,0.85)';
+  ctx.strokeStyle = medal.accent;
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.roundRect(x, y, w, 18, 4);
+  ctx.fill();
+  ctx.stroke();
+  ctx.textAlign = 'center';
+  ctx.fillStyle = medal.accent;
+  ctx.fillText(text, lx, y + 13);
   ctx.restore();
 }
 

@@ -7,7 +7,7 @@ export function buildFrame(snapshot, frameIdx, placements) {
   const players = snapshot.players;
   const cum = Object.fromEntries(players.map(p => [p.player_id, p.cumulative_plw]));
   const teamTotal = players.reduce((s, p) => s + p.cumulative_plw, 0);
-  const top3 = [...players].sort((a, b) => b.cumulative_plw - a.cumulative_plw).slice(0, 3);
+  const leaders = [...players].sort((a, b) => b.cumulative_plw - a.cumulative_plw).slice(0, TOWER_TILES.length);
 
   const lots = {};
   let radius = 2;
@@ -47,5 +47,5 @@ export function buildFrame(snapshot, frameIdx, placements) {
     }
   }
 
-  return { players, cum, teamTotal, top3, lots, tiles, radius, frameIdx };
+  return { players, cum, teamTotal, leaders, lots, tiles, radius, frameIdx };
 }

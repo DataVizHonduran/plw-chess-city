@@ -16,11 +16,14 @@ export const isRoad = (x, y) => x % ROAD_EVERY === 0 || y % ROAD_EVERY === 0;
 export const isDowntown = (x, y) => Math.abs(x - CENTER) <= 1 && Math.abs(y - CENTER) <= 1;
 export const ringDist = (x, y) => Math.max(Math.abs(x - CENTER), Math.abs(y - CENTER));
 
-// Tower tiles for ranks 1-3: back of the downtown block so they don't hide the plaza
+// Downtown tower tiles by rank: 1-3 tall at the back, 4-6 shorter at the front
 export const TOWER_TILES = [
   { x: CENTER - 1, y: CENTER - 1 },
   { x: CENTER + 1, y: CENTER - 1 },
   { x: CENTER - 1, y: CENTER + 1 },
+  { x: CENTER + 1, y: CENTER },
+  { x: CENTER, y: CENTER + 1 },
+  { x: CENTER + 1, y: CENTER + 1 },
 ];
 
 // Buildable lots, nearest to downtown first

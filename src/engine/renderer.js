@@ -44,7 +44,7 @@ export function renderCity(ctx, city, images, anim, selectedId) {
   const objs = [];
   for (const t of city.tiles) if (t.prop) objs.push({ d: t.x + t.y, kind: 'prop', x: t.x, y: t.y, stem: t.prop });
   for (const lot of Object.values(city.lots)) objs.push({ d: lot.x + lot.y, kind: 'bld', lot });
-  city.top3.forEach((p, rank) => {
+  city.leaders.forEach((p, rank) => {
     const { x, y } = TOWER_TILES[rank];
     objs.push({ d: x + y, kind: 'tower', x, y, rank, player: p });
   });
@@ -54,7 +54,7 @@ export function renderCity(ctx, city, images, anim, selectedId) {
   const roofs = [];
   for (const o of objs) {
     if (o.kind === 'tower') {
-      const target = towerHeight(o.player.cumulative_plw);
+      const target = towerHeight(o.player.cumulative_plw, o.rank);
       const h = anim.towerH[o.rank] = (anim.towerH[o.rank] ?? 0) + (target - (anim.towerH[o.rank] ?? 0)) * 0.06;
       const { sx, sy } = toIso(o.x, o.y);
       const top = drawTower(ctx, sx, sy, h, MEDALS[o.rank], 7000 + o.rank * 1000, anim.frame, o.rank === 0);
