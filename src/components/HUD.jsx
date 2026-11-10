@@ -4,7 +4,7 @@ import { MEDALS } from '../engine/tierConfig.js';
 const ALWAYS_SHOW = new Set(['rafael boquin']);
 const TOP_N = 10;
 
-export default function HUD({ city, prevSnap, error, date, selected, onSelect }) {
+export default function HUD({ city, prevSnap, error, date, estimated, selected, onSelect }) {
   const panel = {
     position: 'absolute', top: 12, left: 12, width: 250,
     background: 'rgba(12,14,30,0.82)', border: '1px solid #2c3550', borderRadius: 8,
@@ -26,14 +26,20 @@ export default function HUD({ city, prevSnap, error, date, selected, onSelect })
   return (
     <div style={panel}>
       <div style={{ fontSize: 15, fontWeight: 'bold', color: '#FFD700', letterSpacing: 1 }}>
-        PLW CHESS CITY <span style={{ fontSize: 11, color: '#88aaff', fontWeight: 'normal' }}>{fmtDate(date)}</span>
+        PLW CHESS CITY <span style={{ fontSize: 11, color: '#88aaff', fontWeight: 'normal' }}>{fmtDate(date)}{estimated && ' (est.)'}</span>
       </div>
       <div style={{ color: '#9aa3b8', fontSize: 11, margin: '4px 0 8px' }}>
         {city.players.length} players · {Math.round(city.teamTotal).toLocaleString()} pts ·{' '}
         {Object.keys(city.lots).length} buildings
       </div>
 
-      {best && gain(best) > 0 && (
+      {estimated && (
+        <div style={{ color: '#9aa3b8', fontSize: 10, marginBottom: 8 }}>
+          Before Nov 10: estimated, assuming steady growth since Sep 1.
+        </div>
+      )}
+
+      {!estimated && best && gain(best) > 0 && (
         <div style={{ marginBottom: 8, padding: '4px 6px', background: 'rgba(255,215,0,0.08)', borderRadius: 4 }}>
           <span style={{ color: '#9aa3b8' }}>Hot streak 🔥 </span>
           <b>{fmtName(best.player_id)}</b>
@@ -59,7 +65,7 @@ export default function HUD({ city, prevSnap, error, date, selected, onSelect })
             <span style={{ flex: 1, color: medal ? medal.accent : '#e8e8e8' }}>{fmtName(p.player_id)}</span>
             <span>{Math.round(p.cumulative_plw).toLocaleString()}</span>
             <span style={{ width: 34, textAlign: 'right', color: g > 0 ? '#7CFC9A' : '#444', fontSize: 10 }}>
-              {g > 0 ? `+${g}` : ''}
+              {g > 0 && !estimated ? `+${g}` : ''}
             </span>
           </div>
         );

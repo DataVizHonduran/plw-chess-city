@@ -104,6 +104,7 @@ export default function CityCanvas() {
           prevSnap={prevSnap}
           error={error}
           date={snapshots[currentIndex]?.date}
+          estimated={!!snapshots[currentIndex]?.estimated}
           selected={selected}
           onSelect={id => setSelected(s => s === id ? null : id)}
         />

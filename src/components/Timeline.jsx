@@ -96,7 +96,7 @@ export default function Timeline({ snapshots, currentIndex, isPlaying, onScrub, 
         fontSize: 13,
       }}>
         {isPlaying && <span style={{ marginRight: 4 }}>▶</span>}
-        {fmt(current)}
+        {fmt(current)}{snapshots[currentIndex]?.estimated && <span style={{ color: '#888', fontWeight: 'normal' }}> est.</span>}
         <div style={{ fontWeight: 'normal', fontSize: 10, color: '#666', marginTop: 1 }}>
           Day {currentIndex + 1} / {snapshots.length}
         </div>
