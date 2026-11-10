@@ -26,7 +26,11 @@ export default function HUD({ city, prevSnap, error, date, estimated, selected, 
   return (
     <div style={panel}>
       <div style={{ fontSize: 15, fontWeight: 'bold', color: '#FFD700', letterSpacing: 1 }}>
-        PLW CHESS CITY <span style={{ fontSize: 11, color: '#88aaff', fontWeight: 'normal' }}>{fmtDate(date)}{estimated && ' (est.)'}</span>
+        PLW CHESS CITY
+      </div>
+      <div style={{ fontSize: 22, fontWeight: 'bold', color: '#fff', marginTop: 2 }}>
+        {fmtDate(date)}
+        {estimated && <span style={{ fontSize: 12, color: '#9aa3b8', fontWeight: 'normal' }}> est.</span>}
       </div>
       <div style={{ color: '#9aa3b8', fontSize: 11, margin: '4px 0 8px' }}>
         {city.players.length} players · {Math.round(city.teamTotal).toLocaleString()} pts ·{' '}
