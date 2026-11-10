@@ -2,9 +2,8 @@
 Scrape PS11 roster from ICN (password-gated Squarespace page) and update
 public/team_stats.json + public/history.json + public/carry.json.
 
-Lifetime score never resets. PLW on the roster is a rolling window that
-rises and falls daily, so carry.json accumulates PLW / window each day
-(see update_carry). City only grows.
+Score = the page's PLW_YTD column, unchanged. On a season reset the old
+YTD is banked in carry.json so the city never shrinks.
 
 Usage:
   pip install playwright requests
@@ -100,37 +99,23 @@ def load_json(path, default):
     return default
 
 
-PLW_WINDOW_DAYS = 7   # PLW = rolling "points last week", not month-to-date
-
-
-def update_carry(carry, roster, counter_key, date):
-    """Advance each player's never-shrinking lifetime total by one day.
-    plw (rolling window): add plw / window — summed daily this recovers total points.
-    plw_ytd: add the day's increase; a drop means season reset, so add the new value.
-    Re-running on the same date recomputes from the start-of-day base."""
-    if carry.get("date") != date:
-        carry["base"] = dict(carry.get("total", {}))
-        carry["base_last"] = dict(carry.get("last", {}))
-        carry["date"] = date
-    base, base_last = carry["base"], carry["base_last"]
-    switched = carry.get("counter") not in (None, counter_key)
-    total, last = dict(base), dict(base_last)
+def update_carry(carry, roster):
+    """Score = PLW_YTD exactly as shown on the ICN page, plus anything banked
+    from earlier seasons. If a player's YTD drops (new season), bank the old value
+    so the city never shrinks."""
+    banked = carry.setdefault("banked", {})
+    last = carry.setdefault("last", {})
     for p in roster:
-        name, cur = p["name"], p.get(counter_key, 0)
-        if counter_key == "plw":
-            gain = cur / PLW_WINDOW_DAYS
-        elif switched or name not in base_last:
-            gain = 0          # first sight of this counter: baseline only
-        else:
-            prev = base_last[name]
-            gain = cur - prev if cur >= prev else cur
-        total[name] = round(base.get(name, 0) + gain, 2)
+        name, cur = p["name"], p.get("plw_ytd", 0)
+        if cur < last.get(name, 0):
+            banked[name] = banked.get(name, 0) + last[name]
+            print(f"[carry] {name}: YTD {last[name]} → {cur}, banked {last[name]}")
         last[name] = cur
-    carry.update(total=total, last=last, counter=counter_key)
+    carry["total"] = {k: banked.get(k, 0) + v for k, v in last.items()}
     return carry
 
 
-def build_output(roster, carry, counter_key):
+def build_output(roster, carry):
     total = carry["total"]
     players = []
     for p in roster:
@@ -173,17 +158,15 @@ def main():
         roster = parse_roster(fetch_roster_html())
         if not roster:
             raise RuntimeError("Parsed 0 players — table layout changed?")
+        if not any("plw_ytd" in p for p in roster):
+            raise RuntimeError("No PLW_YTD column on the page")
     except Exception as e:
         print(f"::warning::Scrape failed, keeping last data: {e}")
         sys.exit(0)
+    print(f"[scrape] {len(roster)} players")
 
-    # Prefer season-to-date counter; fall back to monthly PLW
-    counter_key = "plw_ytd" if any("plw_ytd" in p for p in roster) else "plw"
-    print(f"[scrape] {len(roster)} players, counter={counter_key}")
-
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    carry = update_carry(load_json(CARRY_FILE, {}), roster, counter_key, today)
-    output = build_output(roster, carry, counter_key)
+    carry = update_carry(load_json(CARRY_FILE, {}), roster)
+    output = build_output(roster, carry)
 
     with open(CARRY_FILE, "w") as f:
         json.dump(carry, f, indent=1)
