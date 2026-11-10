@@ -1,131 +1,139 @@
-import { CANVAS_W, CANVAS_H, TILE_W, TILE_H, GRID_SIZE } from '../constants.js';
-import { toIso, lerp } from './isoMath.js';
+import { CANVAS_W, CANVAS_H, TILE_W, TILE_H, SPRITE_SCALE, CENTER, ROAD_EVERY } from '../constants.js';
+import { toIso } from './isoMath.js';
 import { drawParticles } from './particles.js';
-import { SKYSCRAPER_STEM, getTeamLandmark } from './tierConfig.js';
+import { seededRand, TOWER_TILES } from './gridLayout.js';
+import { VEHICLES, vehicleCount, towerHeight, MEDALS } from './tierConfig.js';
+import { drawTower, drawBanner } from './towers.js';
 
-export function renderCity(ctx, cityState, images, animState) {
-  if (!cityState) return;
+const POP_FRAMES = 24;
 
-  // Clear
-  ctx.fillStyle = '#1a1a2e';
+export function renderCity(ctx, city, images, anim, selectedId) {
+  if (!city) return;
+
+  const sky = ctx.createLinearGradient(0, 0, 0, CANVAS_H);
+  sky.addColorStop(0, '#141a33');
+  sky.addColorStop(1, '#1f2a3d');
+  ctx.fillStyle = sky;
   ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
 
-  // Collect all tiles from all player zones
-  const allTiles = [];
-  Object.values(cityState.allTiles || {}).forEach(tiles => {
-    allTiles.push(...tiles);
-  });
-
-  // Sort painter's order: low x+y first (back to front in iso)
-  allTiles.sort((a, b) => (a.x + a.y) - (b.x + b.y) || a.x - b.x);
-
-  for (const tile of allTiles) {
-    const { sx, sy } = toIso(tile.x, tile.y);
-
-    // Ground / road layer
-    _drawStem(ctx, images, tile.groundStem, sx, sy, TILE_W, TILE_H);
-
-    // Prop
-    if (tile.propStem) {
-      const img = images.get(tile.propStem);
-      if (img) {
-        const { dw, dh } = _scale(img, TILE_W * 1.2);
-        ctx.drawImage(img, sx + (TILE_W - dw) / 2, sy + TILE_H - dh, dw, dh);
-      }
-    }
-
-    // Building
-    if (tile.buildingStem) {
-      const img = images.get(tile.buildingStem);
-      if (img) {
-        const { dw, dh } = _scale(img, TILE_W * 1.8);
-        let yOff = 0;
-        if (tile.isSkyscraper) {
-          const prog = animState.skyscraperProgress[tile.playerId] ?? 1;
-          yOff = lerp(-60, 0, prog);
-        }
-        ctx.drawImage(img, sx + (TILE_W - dw) / 2, sy + TILE_H - dh + yOff, dw, dh);
-      }
-    }
-
-    // Vehicle
-    if (tile.vehicleStem) {
-      const img = images.get(tile.vehicleStem);
-      if (img) {
-        const { dw, dh } = _scale(img, TILE_W * 1.0);
-        ctx.drawImage(img, sx + (TILE_W - dw) / 2, sy + TILE_H - dh, dw, dh);
-      }
-    }
+  // 1. Ground (flat, any order)
+  for (const t of city.tiles) {
+    const { sx, sy } = toIso(t.x, t.y);
+    const img = images.get(t.ground);
+    if (img) ctx.drawImage(img, sx, sy, TILE_W, TILE_H);
   }
 
-  // Team landmark at grid center
-  const totalTeamPlw = (cityState.players || []).reduce((s, p) => s + (p.cumulative_plw ?? 0), 0);
-  const landmark = getTeamLandmark(totalTeamPlw);
-  if (landmark) {
-    const cx = Math.floor(GRID_SIZE / 2);
-    const cy = Math.floor(GRID_SIZE / 2);
-    const { sx, sy } = toIso(cx, cy);
-    const img = images.get(landmark.stem);
-    if (img) {
-      const { dw, dh } = _scale(img, TILE_W * 1.8);
-      ctx.drawImage(img, sx + (TILE_W - dw) / 2, sy + TILE_H - dh, dw, dh);
-    }
-    // Label
+  // 2. Selected player's lots glow
+  if (selectedId) {
+    const pulse = 0.55 + 0.45 * Math.sin(anim.frame / 10);
     ctx.save();
-    ctx.font = 'bold 11px monospace';
-    ctx.textAlign = 'center';
-    ctx.shadowColor = '#fff';
-    ctx.shadowBlur = 5;
-    ctx.fillStyle = '#ffffff';
-    ctx.fillText(landmark.label, sx + TILE_W / 2, sy - 4);
-    ctx.shadowBlur = 0;
+    ctx.strokeStyle = `rgba(255,215,0,${pulse})`;
+    ctx.fillStyle = `rgba(255,215,0,${0.25 * pulse})`;
+    ctx.lineWidth = 2;
+    for (const lot of Object.values(city.lots)) {
+      if (lot.playerId !== selectedId) continue;
+      const { sx, sy } = toIso(lot.x, lot.y);
+      _diamond(ctx, sx, sy);
+      ctx.fill();
+      ctx.stroke();
+    }
     ctx.restore();
   }
 
-  // Particles on top of everything
-  drawParticles(ctx, animState.particles);
+  // 3. Objects in painter's order (back → front)
+  const objs = [];
+  for (const t of city.tiles) if (t.prop) objs.push({ d: t.x + t.y, kind: 'prop', x: t.x, y: t.y, stem: t.prop });
+  for (const lot of Object.values(city.lots)) objs.push({ d: lot.x + lot.y, kind: 'bld', lot });
+  city.top3.forEach((p, rank) => {
+    const { x, y } = TOWER_TILES[rank];
+    objs.push({ d: x + y, kind: 'tower', x, y, rank, player: p });
+  });
+  objs.push(..._vehicles(city, anim.frame));
+  objs.sort((a, b) => a.d - b.d);
 
-  // 1K Club floating labels
-  ctx.font = 'bold 13px monospace';
-  ctx.textAlign = 'center';
-  for (const tile of allTiles) {
-    if (!tile.isSkyscraper) continue;
-    const img = images.get(SKYSCRAPER_STEM);
-    const bldH = img ? _scale(img, TILE_W * 1.8).dh : 40;
-    const { sx, sy } = toIso(tile.x, tile.y);
-    const prog = animState.skyscraperProgress[tile.playerId] ?? 1;
-    const yOff = lerp(-120, 0, prog);
+  const roofs = [];
+  for (const o of objs) {
+    if (o.kind === 'tower') {
+      const target = towerHeight(o.player.cumulative_plw);
+      const h = anim.towerH[o.rank] = (anim.towerH[o.rank] ?? 0) + (target - (anim.towerH[o.rank] ?? 0)) * 0.06;
+      const { sx, sy } = toIso(o.x, o.y);
+      const top = drawTower(ctx, sx, sy, h, MEDALS[o.rank], 7000 + o.rank * 1000, anim.frame, o.rank === 0);
+      roofs.push({ cx: sx + TILE_W / 2, top, player: o.player, medal: MEDALS[o.rank] });
+      continue;
+    }
+    const stem = o.kind === 'bld' ? o.lot.stem : o.stem;
+    const img = images.get(stem);
+    if (!img) continue;
+    const { sx, sy } = o.kind === 'veh' ? toIso(o.fx, o.fy) : toIso(o.x ?? o.lot.x, o.y ?? o.lot.y);
+    let s = SPRITE_SCALE;
+    if (o.kind === 'bld') {
+      const born = anim.pop.get(`${o.lot.x},${o.lot.y}`);
+      if (born !== undefined) {
+        const t = Math.min(1, (anim.frame - born) / POP_FRAMES);
+        s *= t < 1 ? 0.3 + 0.7 * t + Math.sin(t * Math.PI) * 0.25 : 1;
+      }
+    }
+    const dw = img.naturalWidth * s;
+    const dh = img.naturalHeight * s;
+    ctx.drawImage(img, sx + (TILE_W - dw) / 2, sy + TILE_H - dh + (o.kind === 'veh' ? -4 : 0), dw, dh);
+  }
 
-    // Gold glow
-    ctx.shadowColor = '#FFD700';
-    ctx.shadowBlur = 8;
+  drawParticles(ctx, anim.particles);
+
+  // Bouncing pins over the selected player's buildings (ground glow is mostly hidden)
+  if (selectedId) {
+    const bob = Math.sin(anim.frame / 8) * 4;
+    ctx.save();
     ctx.fillStyle = '#FFD700';
-    ctx.fillText(tile.playerId, sx + TILE_W / 2, sy + TILE_H - bldH + yOff - 10);
-    ctx.shadowBlur = 0;
+    ctx.strokeStyle = '#1a1a2e';
+    ctx.lineWidth = 2;
+    for (const lot of Object.values(city.lots)) {
+      if (lot.playerId !== selectedId) continue;
+      const { sx, sy } = toIso(lot.x, lot.y);
+      const cx = sx + TILE_W / 2, y = sy - 70 + bob;
+      ctx.beginPath();
+      ctx.moveTo(cx - 13, y);
+      ctx.lineTo(cx + 13, y);
+      ctx.lineTo(cx, y + 22);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+    }
+    ctx.restore();
   }
-  ctx.textAlign = 'left';
+
+  // 4. Name banners always on top
+  for (const r of roofs) drawBanner(ctx, r.cx, r.top, r.player, r.medal);
 }
 
-// Scale image to fit within maxW, preserving aspect ratio
-function _scale(img, maxW) {
-  const scale = Math.min(1, maxW / img.naturalWidth);
-  return { dw: img.naturalWidth * scale, dh: img.naturalHeight * scale };
+// Cars loop along roads inside the current footprint. Pure function of frame — no state.
+function _vehicles(city, frame) {
+  const n = vehicleCount(city.teamTotal);
+  const lo = CENTER - city.radius, hi = CENTER + city.radius;
+  const lines = [];
+  for (let v = Math.ceil(lo / ROAD_EVERY) * ROAD_EVERY; v <= hi; v += ROAD_EVERY) lines.push(v);
+  if (!lines.length) return [];
+  const span = hi - lo;
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const r = seededRand(i * 977 + 13);
+    const alongX = i % 2 === 0;
+    const line = lines[Math.floor(r * lines.length)];
+    const speed = 0.012 + seededRand(i * 31) * 0.018;
+    const pos = lo + ((r * span + frame * speed) % span);
+    const stem = VEHICLES[i % VEHICLES.length] + (alongX ? '_SE_normal' : '_SW_normal');
+    const fx = alongX ? pos : line;
+    const fy = alongX ? line : pos;
+    out.push({ d: fx + fy + 0.01, kind: 'veh', fx, fy, stem });
+  }
+  return out;
 }
 
-function _drawStem(ctx, images, stem, sx, sy, w, h) {
-  if (!stem) return;
-  const img = images.get(stem);
-  if (img) {
-    ctx.drawImage(img, sx, sy, w, h);
-  } else {
-    // Fallback: colored diamond
-    ctx.fillStyle = '#2a3a2a';
-    ctx.beginPath();
-    ctx.moveTo(sx + w / 2, sy);
-    ctx.lineTo(sx + w, sy + h / 2);
-    ctx.lineTo(sx + w / 2, sy + h);
-    ctx.lineTo(sx, sy + h / 2);
-    ctx.closePath();
-    ctx.fill();
-  }
+function _diamond(ctx, sx, sy) {
+  ctx.beginPath();
+  ctx.moveTo(sx + TILE_W / 2, sy);
+  ctx.lineTo(sx + TILE_W, sy + TILE_H / 2);
+  ctx.lineTo(sx + TILE_W / 2, sy + TILE_H);
+  ctx.lineTo(sx, sy + TILE_H / 2);
+  ctx.closePath();
 }

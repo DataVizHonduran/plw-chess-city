@@ -1,96 +1,72 @@
-import { getTier, getTeamLandmark } from '../engine/tierConfig.js';
+import { fmtName, fmtDate } from '../engine/format.js';
+import { MEDALS } from '../engine/tierConfig.js';
 
-const TIER_LABEL = { 1: 'Outskirts', 2: 'Village', 3: 'Town', 4: 'City' };
-const TIER_COLOR = { 1: '#a07850', 2: '#60a060', 3: '#4080c0', 4: '#c060c0' };
+const ALWAYS_SHOW = new Set(['rafael boquin']);
+const TOP_N = 10;
 
-function fmtName(fullName) {
-  const parts = fullName.trim().split(/\s+/);
-  if (parts.length === 1) return parts[0];
-  return parts[0] + ' ' + parts[parts.length - 1][0] + '.';
-}
-
-function fmtDate(dateStr) {
-  if (!dateStr) return '';
-  const [, m, d] = dateStr.split('-');
-  const month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m - 1];
-  return `${month} ${+d}`;
-}
-
-export default function HUD({ players, loading, error, assetsReady, currentDate, isPlayback }) {
-  const hudStyle = {
-    position: 'absolute',
-    top: 12,
-    left: 16,
-    color: '#e8e8e8',
-    fontFamily: 'monospace',
-    fontSize: 13,
-    pointerEvents: 'none',
+export default function HUD({ city, prevSnap, error, date, selected, onSelect }) {
+  const panel = {
+    position: 'absolute', top: 12, left: 12, width: 250,
+    background: 'rgba(12,14,30,0.82)', border: '1px solid #2c3550', borderRadius: 8,
+    padding: '10px 12px', color: '#e8e8e8', fontFamily: 'monospace', fontSize: 12,
     userSelect: 'none',
   };
 
-  if (loading) return <div style={hudStyle}><span style={{ color: '#888' }}>Loading…</span></div>;
-  if (error)   return <div style={hudStyle}><span style={{ color: '#f44' }}>Error: {error}</span></div>;
+  if (error) return <div style={panel}><span style={{ color: '#f66' }}>Error: {error}</span></div>;
+  if (!city) return <div style={panel}><span style={{ color: '#888' }}>Loading city…</span></div>;
 
-  const totalCum = players.reduce((s, p) => s + (p.cumulative_plw ?? 0), 0);
-  const milestone = getTeamLandmark(totalCum);
+  const prev = Object.fromEntries((prevSnap?.players ?? []).map(p => [p.player_id, p.cumulative_plw]));
+  const gain = p => prevSnap ? p.cumulative_plw - (prev[p.player_id] ?? 0) : 0;
+  const ranked = [...city.players].sort((a, b) => b.cumulative_plw - a.cumulative_plw);
+  const rows = ranked
+    .map((p, i) => ({ ...p, rank: i + 1 }))
+    .filter(p => p.rank <= TOP_N || ALWAYS_SHOW.has(p.player_id.toLowerCase()) || p.player_id === selected);
+  const best = ranked.reduce((m, p) => (gain(p) > gain(m) ? p : m), ranked[0]);
 
   return (
-    <>
-    <div style={hudStyle}>
-      <div style={{ marginBottom: 2, fontSize: 15, fontWeight: 'bold', color: '#FFD700', letterSpacing: 1 }}>
-        PLW CHESS CITY
-        {isPlayback && currentDate && (
-          <span style={{ marginLeft: 10, fontSize: 12, color: '#88aaff', fontWeight: 'normal' }}>
-            ▶ {fmtDate(currentDate)}
-          </span>
-        )}
+    <div style={panel}>
+      <div style={{ fontSize: 15, fontWeight: 'bold', color: '#FFD700', letterSpacing: 1 }}>
+        PLW CHESS CITY <span style={{ fontSize: 11, color: '#88aaff', fontWeight: 'normal' }}>{fmtDate(date)}</span>
       </div>
-      <div style={{ marginBottom: 6, color: '#666', fontSize: 10, fontStyle: 'italic' }}>
-        City grows as players accumulate PLWs. More points means more unlocks.
+      <div style={{ color: '#9aa3b8', fontSize: 11, margin: '4px 0 8px' }}>
+        {city.players.length} players · {Math.round(city.teamTotal).toLocaleString()} pts ·{' '}
+        {Object.keys(city.lots).length} buildings
       </div>
-      <div style={{ marginBottom: 6, color: '#aaa', fontSize: 11 }}>
-        Team Total: <span style={{ color: '#fff' }}>{totalCum.toLocaleString()}</span> PLW
-        {!assetsReady && <span style={{ color: '#666', marginLeft: 6 }}>(loading assets…)</span>}
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        {[...players]
-          .sort((a, b) => (b.cumulative_plw ?? 0) - (a.cumulative_plw ?? 0))
-          .map(p => {
-            const cum = p.cumulative_plw ?? 0;
-            const tier = getTier(cum);
-            const color = TIER_COLOR[tier];
-            const is1k = cum >= 1000;
-            return (
-              <div key={p.player_id} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ color, minWidth: 14 }}>{is1k ? '★' : '·'}</span>
-                <span style={{ minWidth: 110 }}>{fmtName(p.player_id)}</span>
-                <span style={{ minWidth: 70 }}>
-                  {cum.toLocaleString()}
-                  <span style={{ fontSize: 10, color: '#666', marginLeft: 4 }}>
-                    +{(p.mtd_plw ?? 0).toLocaleString()}
-                  </span>
-                </span>
-              </div>
-            );
-          })}
+
+      {best && gain(best) > 0 && (
+        <div style={{ marginBottom: 8, padding: '4px 6px', background: 'rgba(255,215,0,0.08)', borderRadius: 4 }}>
+          <span style={{ color: '#9aa3b8' }}>Hot streak 🔥 </span>
+          <b>{fmtName(best.player_id)}</b>
+          <span style={{ color: '#7CFC9A' }}> +{Math.round(gain(best))}</span>
+        </div>
+      )}
+
+      {rows.map(p => {
+        const medal = MEDALS[p.rank - 1];
+        const isSel = p.player_id === selected;
+        const g = Math.round(gain(p));
+        return (
+          <div
+            key={p.player_id}
+            onClick={() => onSelect(p.player_id)}
+            style={{
+              display: 'flex', gap: 6, padding: '2px 4px', cursor: 'pointer', borderRadius: 3,
+              background: isSel ? 'rgba(255,215,0,0.18)' : 'transparent',
+              borderTop: p.rank > TOP_N ? '1px dashed #333' : 'none',
+            }}
+          >
+            <span style={{ width: 24, color: medal?.accent ?? '#667' }}>{p.rank}.</span>
+            <span style={{ flex: 1, color: medal ? medal.accent : '#e8e8e8' }}>{fmtName(p.player_id)}</span>
+            <span>{Math.round(p.cumulative_plw).toLocaleString()}</span>
+            <span style={{ width: 34, textAlign: 'right', color: g > 0 ? '#7CFC9A' : '#444', fontSize: 10 }}>
+              {g > 0 ? `+${g}` : ''}
+            </span>
+          </div>
+        );
+      })}
+      <div style={{ color: '#667', fontSize: 10, marginTop: 8, fontStyle: 'italic' }}>
+        Every 250 pts = a new building. Top 3 own the towers. Click a name or building to find it.
       </div>
     </div>
-    {milestone && (
-      <div style={{
-        position: 'absolute',
-        bottom: 16,
-        left: 16,
-        color: '#FFD700',
-        fontFamily: 'monospace',
-        fontSize: 13,
-        fontWeight: 'bold',
-        pointerEvents: 'none',
-        userSelect: 'none',
-        textShadow: '0 0 8px #FFD700',
-      }}>
-        Team Milestone: {totalCum.toLocaleString()} PLW — {milestone.label}
-      </div>
-    )}
-    </>
   );
 }

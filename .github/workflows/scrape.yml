@@ -21,15 +21,20 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: |
+          pip install requests playwright
+          playwright install --with-deps chromium
 
       - name: Run scraper
+        env:
+          ICN_PASSWORD: ${{ secrets.ICN_PASSWORD }}
         run: python scripts/scrape_plw.py
 
       - name: Commit updated data
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add public/team_stats.json public/base_plw.json
-          git diff --staged --quiet || git commit -m "chore: update PLW data [skip ci]"
+          git add public/team_stats.json public/history.json public/carry.json
+          git diff --staged --quiet || git commit -m "chore: update PLW data"
+          git pull --rebase
           git push

@@ -2,37 +2,20 @@ import { useEffect, useRef } from 'react';
 import { renderCity } from '../engine/renderer.js';
 import { stepParticles } from '../engine/particles.js';
 
-export function useAnimationLoop(canvasRef, imagesRef, cityStateRef, animRef) {
+export function useAnimationLoop(canvasRef, imagesRef, cityRef, animRef, selectedRef) {
   const rafRef = useRef(null);
 
   useEffect(() => {
     function tick() {
       rafRef.current = requestAnimationFrame(tick);
-
       const canvas = canvasRef.current;
-      const cityState = cityStateRef.current;
-      if (!canvas || !cityState) return;
-
-      const ctx = canvas.getContext('2d');
+      if (!canvas || !cityRef.current) return;
       const anim = animRef.current;
-
-      // Advance skyscraper rise animations
-      anim.pendingRises.forEach(pid => {
-        anim.skyscraperProgress[pid] = Math.min(1, (anim.skyscraperProgress[pid] ?? 0) + 1 / 60);
-        if (anim.skyscraperProgress[pid] >= 1) anim.pendingRises.delete(pid);
-      });
-
-      // Step particles
       stepParticles(anim.particles);
-
       anim.frame++;
-
-      renderCity(ctx, cityState, imagesRef.current, anim);
+      renderCity(canvas.getContext('2d'), cityRef.current, imagesRef.current, anim, selectedRef.current);
     }
-
     rafRef.current = requestAnimationFrame(tick);
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
+    return () => cancelAnimationFrame(rafRef.current);
   }, []);
 }

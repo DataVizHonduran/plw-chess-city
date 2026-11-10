@@ -1,3 +1,5 @@
+import { fmtDate as fmt } from '../engine/format.js';
+
 export default function Timeline({ snapshots, currentIndex, isPlaying, onScrub, onReplay }) {
   if (!snapshots.length) return null;
 
@@ -5,17 +7,7 @@ export default function Timeline({ snapshots, currentIndex, isPlaying, onScrub, 
   const last  = snapshots[snapshots.length - 1]?.date;
   const current = snapshots[currentIndex]?.date;
 
-  // Parse "YYYY-MM-DD" → "Apr 1" style
-  function fmt(dateStr) {
-    if (!dateStr) return '';
-    const [, m, d] = dateStr.split('-');
-    const month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m - 1];
-    return `${month} ${+d}`;
-  }
 
-  // Snapshot-based counter (1-indexed), not calendar day
-  const dayOfMonth = currentIndex + 1;
-  const daysInMonth = snapshots.length;
 
   const barStyle = {
     position: 'relative',
@@ -59,7 +51,6 @@ export default function Timeline({ snapshots, currentIndex, isPlaying, onScrub, 
     height: 3,
     background: '#FFD700',
     borderRadius: 2,
-    transition: 'width 0.4s ease',
   };
 
   function handleTrackClick(e) {
@@ -74,14 +65,14 @@ export default function Timeline({ snapshots, currentIndex, isPlaying, onScrub, 
       {/* Replay button */}
       <button
         onClick={onReplay}
-        title="Replay month"
+        title="Watch the city grow from day 1"
         style={{
           background: 'none', border: '1px solid #555', color: '#aaa',
           padding: '3px 8px', borderRadius: 4, cursor: 'pointer',
           fontFamily: 'monospace', fontSize: 12,
         }}
       >
-        ↺
+        ▶ Watch it grow
       </button>
 
       {/* Date range labels */}
@@ -92,31 +83,6 @@ export default function Timeline({ snapshots, currentIndex, isPlaying, onScrub, 
         <div style={railStyle} />
         <div style={fillStyle} />
 
-        {/* Day dots */}
-        {snapshots.map((s, i) => {
-          const left = snapshots.length > 1 ? (i / (snapshots.length - 1)) * 100 : 50;
-          const isActive = i === currentIndex;
-          return (
-            <div
-              key={s.date}
-              onClick={e => { e.stopPropagation(); onScrub(i); }}
-              title={fmt(s.date)}
-              style={{
-                position: 'absolute',
-                left: `${left}%`,
-                transform: 'translateX(-50%)',
-                width: isActive ? 10 : 6,
-                height: isActive ? 10 : 6,
-                borderRadius: '50%',
-                background: isActive ? '#FFD700' : '#555',
-                border: isActive ? '2px solid #fff' : 'none',
-                cursor: 'pointer',
-                transition: 'all 0.2s',
-                zIndex: 1,
-              }}
-            />
-          );
-        })}
       </div>
 
       <span style={{ minWidth: 40, color: '#666', textAlign: 'right' }}>{fmt(last)}</span>
@@ -132,7 +98,7 @@ export default function Timeline({ snapshots, currentIndex, isPlaying, onScrub, 
         {isPlaying && <span style={{ marginRight: 4 }}>▶</span>}
         {fmt(current)}
         <div style={{ fontWeight: 'normal', fontSize: 10, color: '#666', marginTop: 1 }}>
-          Day {dayOfMonth} / {daysInMonth}
+          Day {currentIndex + 1} / {snapshots.length}
         </div>
       </div>
     </div>

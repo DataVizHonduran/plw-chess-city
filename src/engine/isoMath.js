@@ -7,6 +7,3 @@ export function toIso(x, y) {
   };
 }
 
-export function lerp(a, b, t) {
-  return a + (b - a) * Math.min(1, Math.max(0, t));
-}

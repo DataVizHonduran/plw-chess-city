@@ -2,6 +2,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_run:            # bot pushes don't trigger push events — redeploy after each scrape
+    workflows: [Scrape PLW Daily]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
